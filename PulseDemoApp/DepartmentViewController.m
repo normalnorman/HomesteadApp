@@ -39,7 +39,7 @@
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wsh005_0501.jpg";
+    item.img = @"wcl004_0402.jpg";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
@@ -48,7 +48,7 @@
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wsh005_0502.jpg";
+    item.img = @"wcl004_0405.jpg";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
@@ -57,7 +57,7 @@
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wsh005_0503.jpg";
+    item.img = @"wcl004_0408.jpg";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
@@ -66,7 +66,7 @@
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wsh005_0509.jpg";
+    item.img = @"wcl004_0410.jpg";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
@@ -75,7 +75,7 @@
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wsh005_0510.jpg";
+    item.img = @"wcl004_0412.jpg";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
@@ -84,7 +84,7 @@
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wsh005_0512.jpg";
+    item.img = @"wcl004_0413.jpg";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
@@ -93,7 +93,7 @@
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wsh005_0514.jpg";
+    item.img = @"wcl004_0415.jpg";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
@@ -102,7 +102,7 @@
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wsh005_0515.jpg";
+    item.img = @"wcl004_0416.jpg";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
@@ -111,7 +111,7 @@
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wsh005_0518.jpg";
+    item.img = @"wcl004_0417.jpg";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
@@ -120,7 +120,7 @@
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wsh005_0519.jpg";
+    item.img = @"wcl004_0418.jpg";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
@@ -129,7 +129,7 @@
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wsh005_0524.jpg";
+    item.img = @"wcl004_0419.jpg";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
@@ -138,7 +138,7 @@
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wsh005_0525.jpg";
+    item.img = @"wcl004_0420.jpg";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
@@ -147,7 +147,7 @@
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wsh005_0526.jpg";
+    item.img = @"wcl004_0405.jpg";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
@@ -156,7 +156,7 @@
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wsh005_0527.jpg";
+    item.img = @"wcl004_0408.jpg";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
@@ -165,7 +165,7 @@
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wsh005_0528.jpg";
+    item.img = @"wcl004_0418.jpg";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
@@ -174,7 +174,7 @@
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wsh005_0533.jpg";
+    item.img = @"wcl004_0402.jpg";
     [self.productImages addObject:item];
 }
 

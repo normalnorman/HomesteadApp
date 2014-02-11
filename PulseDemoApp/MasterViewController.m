@@ -12,6 +12,7 @@
 #import "InventoryViewController.h"
 #import "DetailViewManager.h"
 #import "DetailViewController.h"
+#import "DepartmentViewController.h"
 
 @interface MasterViewController () {
     NSMutableArray *_objects;
@@ -136,6 +137,8 @@
                 NSLog(@"User tapped nav item 1");
                 //InventoryViewController *ivc = [[InventoryViewController alloc] init];
                 //newDetailViewController = ivc;
+                DepartmentViewController *dvc = [[DepartmentViewController alloc] init];
+                self.detailViewController = (UIViewController*)dvc;
             }
             break;
         case 1:
@@ -150,7 +153,7 @@
     //detailViewManager.detailViewController = newDetailViewController;
     //self.detailViewController = newDetailViewController;
     
-    self.detailViewController.detailItem = object;
+    //self.detailViewController.detailItem = object;
 
     //InventoryViewController *ivc = [[InventoryViewController alloc] init];
 }
