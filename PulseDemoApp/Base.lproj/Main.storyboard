@@ -295,10 +295,10 @@
             </objects>
             <point key="canvasLocation" x="5098" y="518"/>
         </scene>
-        <!--View Controller - Jeans-->
+        <!--Product Detail View Controller - Jeans-->
         <scene sceneID="9JL-Yg-riK">
             <objects>
-                <viewController id="JkZ-0w-Qs7" sceneMemberID="viewController">
+                <viewController id="JkZ-0w-Qs7" customClass="ProductDetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GlI-2e-dx8"/>
                         <viewControllerLayoutGuide type="bottom" id="QwB-rd-9xd"/>
