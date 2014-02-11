@@ -48,7 +48,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
     
-    self.categoryImages = @[@"accessories", @"blouses", @"dresses", @"handbags", @"pants", @"shoes", @"skirts", @"sweaters" ];
+    self.categoryImages = @[@"wsh005_0533.jpg", @"wsh005_0501.jpg", @"wsh005_0502.jpg", @"wsh005_0503.jpg", @"wsh005_0504.jpg", @"wsh005_0505.jpg", @"wsh005_0506.jpg", @"wsh005_0507.jpg" ];
 }
 
 - (void)didReceiveMemoryWarning
