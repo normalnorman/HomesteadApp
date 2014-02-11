@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProductCollectionViewCel : UICollectionViewCell
-
+@interface ProductCollectionViewCell : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UIImageView *img;
+@property (nonatomic, weak) IBOutlet UILabel *label;
 @end

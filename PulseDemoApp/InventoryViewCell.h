@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface InventoryViewCell : UICollectionViewCell
-
+@property (nonatomic, weak) IBOutlet UIImageView *imageView;
+@property (nonatomic, weak) IBOutlet UILabel *label;
 @end

@@ -9,5 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface InventoryItem : NSObject
-
+@property (nonatomic)NSString *name;
+@property (nonatomic)NSString *description;
+@property (nonatomic)BOOL inStock;
+@property (nonatomic)NSString *category;
+@property (nonatomic)NSArray *sizes;
+@property (nonatomic)NSString *img;
 @end

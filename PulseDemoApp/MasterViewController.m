@@ -7,7 +7,10 @@
 //
 
 #import "MasterViewController.h"
-
+#import "DetailViewController.h"
+#import "NavigationObject.h"
+#import "InventoryViewController.h"
+#import "DetailViewManager.h"
 #import "DetailViewController.h"
 
 @interface MasterViewController () {
@@ -19,7 +22,7 @@
 
 - (void)awakeFromNib
 {
-    self.clearsSelectionOnViewWillAppear = NO;
+    //self.clearsSelectionOnViewWillAppear = NO;
     self.preferredContentSize = CGSizeMake(320.0, 600.0);
     [super awakeFromNib];
 }
@@ -27,28 +30,43 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    //creating nav array
+    _objects = [[NSMutableArray alloc] init];
+    
+    NavigationObject *navItem = [[NavigationObject alloc] init];
+    navItem.name = @"Search";
+    navItem.icon = @"Search";
+    navItem.action = 0;
+    
+    [_objects addObject:navItem];
+
+    navItem = [[NavigationObject alloc] init];
+    navItem.name = @"Inventory";
+    navItem.icon = @"Inventory";
+    navItem.action = 1;
+    
+    [_objects addObject:navItem];
+    
+    navItem = [[NavigationObject alloc] init];
+    navItem.name = @"Customers";
+    navItem.icon = @"Customers";
+    navItem.action = 2;
+    
+    [_objects addObject:navItem];
+    
+    // Do any additional setup after loading the view, typically from a nib.
+    /*self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+    self.navigationItem.rightBarButtonItem = addButton;*/
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)insertNewObject:(id)sender
-{
-    if (!_objects) {
-        _objects = [[NSMutableArray alloc] init];
-    }
-    [_objects insertObject:[NSDate date] atIndex:0];
-    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
-    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 #pragma mark - Table View
@@ -67,8 +85,10 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    NavigationObject *currentNavItem = _objects[indexPath.row];
+    //NSDate *object = _objects[indexPath.row];
+    cell.textLabel.text = [currentNavItem name];
+    cell.imageView.image = [UIImage imageNamed:currentNavItem.name];
     return cell;
 }
 
@@ -106,8 +126,40 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSDate *object = _objects[indexPath.row];
+    NavigationObject *object = _objects[indexPath.row];
+    //DetailViewManager *detailViewManager = (DetailViewManager*)self.splitViewController.delegate;
+    //UIViewController <SubstitutableDetailViewController> *newDetailViewController = nil;
+    
+    switch (object.action) {
+        case 0:
+            {
+                NSLog(@"User tapped nav item 1");
+                //InventoryViewController *ivc = [[InventoryViewController alloc] init];
+                //newDetailViewController = ivc;
+            }
+            break;
+        case 1:
+            NSLog(@"User tapped nav item 2");
+            break;
+        case 2:
+            NSLog(@"User tapped nav item 3");
+            break;
+        default:
+            break;
+    }
+    //detailViewManager.detailViewController = newDetailViewController;
+    //self.detailViewController = newDetailViewController;
+    
     self.detailViewController.detailItem = object;
+
+    //InventoryViewController *ivc = [[InventoryViewController alloc] init];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    DetailViewController *vc = [segue destinationViewController];
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    NavigationObject *object = _objects[indexPath.row];
 }
 
 @end

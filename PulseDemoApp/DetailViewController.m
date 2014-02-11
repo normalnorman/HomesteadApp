@@ -7,9 +7,11 @@
 //
 
 #import "DetailViewController.h"
+#import "InventoryViewCell.h"
 
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
+@property (strong, nonatomic) NSArray *categoryImages;
 - (void)configureView;
 @end
 
@@ -45,6 +47,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+    
+    self.categoryImages = @[@"accessories", @"blouses", @"dresses", @"handbags", @"pants", @"shoes", @"skirts", @"sweaters" ];
 }
 
 - (void)didReceiveMemoryWarning
@@ -57,7 +61,9 @@
 
 - (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
 {
-    barButtonItem.title = NSLocalizedString(@"Master", @"Master");
+    UIImage *navIcon = [UIImage imageNamed:@"HamburgerIcon.png"];
+    [barButtonItem setImage:navIcon];
+    //barButtonItem.title = NSLocalizedString(@"...", @"...");
     [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
     self.masterPopoverController = popoverController;
 }
@@ -68,5 +74,48 @@
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
 }
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
+{
+    return 1;
+}
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    return self.categoryImages.count;
+}
+
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    InventoryViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"CategoryCell" forIndexPath:indexPath];
+    NSString *imageName = [self.categoryImages objectAtIndex:indexPath.row];
+
+    cell.imageView.image = [UIImage imageNamed:imageName];
+    cell.label.text = imageName;
+    
+    return cell;
+}
+
+-(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    return CGSizeMake(150.0, 150.0);
+}
+
+-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    return UIEdgeInsetsMake(5, 5, 5, 5);
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    InventoryViewCell *selectedCell = (InventoryViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    NSLog(@"Selected category %@", selectedCell.label.text);
+}
+
+-(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
+
 
 @end

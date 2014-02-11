@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 IBM MIL. All rights reserved.
 //
 
-#import "ProductCollectionViewCel.h"
+#import "ProductCollectionViewCell.h"
 
-@implementation ProductCollectionViewCel
+@implementation ProductCollectionViewCell
 
 - (id)initWithFrame:(CGRect)frame
 {

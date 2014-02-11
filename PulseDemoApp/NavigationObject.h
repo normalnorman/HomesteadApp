@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NavigationObject : NSObject
-
+@property (nonatomic)NSString *name;
+@property (nonatomic)NSString *icon;
+@property (nonatomic)int action;
 @end

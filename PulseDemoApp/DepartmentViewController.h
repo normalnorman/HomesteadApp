@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DepartmentViewController : UIViewController
+@interface DepartmentViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
