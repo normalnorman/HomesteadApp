@@ -30,12 +30,14 @@
     [_images addObject:@"jeans7"];
     
     
-    MCRotatingCarousel *carousel = [[MCRotatingCarousel alloc]initWithFrame:CGRectMake(0, 60, 768, 650)];
+    MCRotatingCarousel *carousel = [[MCRotatingCarousel alloc]initWithFrame:CGRectMake(0, 60, 768, 550)];
     carousel.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     carousel.delegate = self;
     carousel.dataSource = self;
     //carousel.pageControl.currentPageIndicatorTintColor = [UIColor blueColor];
     //carousel.pageControl.pageIndicatorTintColor = [UIColor cyanColor];
+    carousel.pageControl.pageIndicatorTintColor = [UIColor clearColor];
+    carousel.pageControl.currentPageIndicatorTintColor = [UIColor clearColor];
     [self.view addSubview:carousel];
     
     [carousel reloadData];
