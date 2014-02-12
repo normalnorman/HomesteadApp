@@ -9,13 +9,18 @@
 #import "ProductDetailViewController.h"
 #import "MCRotatingCarousel.h"
 
-@interface ProductDetailViewController ()<MCRotatingCarouselDataSource, MCRotatingCarouselDelegate>
+@interface ProductDetailViewController ()<MCRotatingCarouselDataSource, MCRotatingCarouselDelegate>{
+    
+}
+- (IBAction)dismiss:(id)sender;
 
 @property (strong) NSArray *items;
 
 @end
 
-@implementation ProductDetailViewController
+@implementation ProductDetailViewController{
+    
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -100,4 +105,7 @@
     }
 }
 
+- (IBAction)dismiss:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
