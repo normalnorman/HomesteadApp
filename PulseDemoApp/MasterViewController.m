@@ -49,16 +49,30 @@
     [_objects addObject:navItem];
     
     navItem = [[NavigationObject alloc] init];
-    navItem.name = @"Customers";
+    navItem.name = @"Style Guide";
     navItem.icon = @"Customers";
     navItem.action = 2;
     
     [_objects addObject:navItem];
     
     navItem = [[NavigationObject alloc] init];
+    navItem.name = @"Client List";
+    navItem.icon = @"Barcode";
+    navItem.action = 3;
+    
+    [_objects addObject:navItem];
+    
+    navItem = [[NavigationObject alloc] init];
+    navItem.name = @"Check Out";
+    navItem.icon = @"Barcode";
+    navItem.action = 4;
+    
+    [_objects addObject:navItem];
+    
+    navItem = [[NavigationObject alloc] init];
     navItem.name = @"Scan Barcode";
     navItem.icon = @"Barcode";
-    navItem.action = 2;
+    navItem.action = 4;
     
     [_objects addObject:navItem];
     
