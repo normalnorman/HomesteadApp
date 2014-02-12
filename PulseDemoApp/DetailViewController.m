@@ -48,7 +48,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
     
-    self.categoryImages = @[@"wcl004_0402.jpg", @"wcl004_0405.jpg", @"wcl004_0406.jpg", @"wcl004_0407.jpg", ];
+    self.categoryImages = @[@"wcl004_0402.jpg", @"wcl004_0405.jpg", @"wcl004_0406.jpg", @"wcl004_0407.jpg", @"wcl004_0408.jpg", @"wcl004_0410.jpg",@"wcl004_0412.jpg"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -115,6 +115,18 @@
 -(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([[segue identifier] isEqualToString:@"EditFilterSegue"]){
+        /*self.productDetailView = [(UIStoryboardSegue *)segue];
+        productDetailView.delegate = (id <UIPopoverControllerDelegate>)self;*/
+    }
+}
+
+- (BOOL)splitViewController:(UISplitViewController*)svc shouldHideViewController:(UIViewController *)vc inOrientation:(UIInterfaceOrientation)orientation
+{
+    return YES;
 }
 
 

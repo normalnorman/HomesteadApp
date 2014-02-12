@@ -35,7 +35,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.view.backgroundColor = [UIColor whiteColor];
+	/*self.view.backgroundColor = [UIColor whiteColor];
     
     MCRotatingCarousel *carousel = [[MCRotatingCarousel alloc]initWithFrame:self.view.bounds];
     carousel.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
@@ -45,7 +45,7 @@
     //carousel.pageControl.pageIndicatorTintColor = [UIColor cyanColor];
     [self.view addSubview:carousel];
     
-    [carousel reloadData];
+    [carousel reloadData];*/
 
 }
 #pragma mark - MCRotatingCarouselDataSource
@@ -79,6 +79,25 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)handleTapBehind:(UITapGestureRecognizer *)sender
+{
+    if (sender.state == UIGestureRecognizerStateEnded)
+    {
+        CGPoint flocation = [sender locationInView:nil]; //Passing nil gives us coordinates in the window
+        
+        //Then we convert the tap's location into the local view's coordinate system, and test to see if it's in or outside. If outside, dismiss the view.
+        
+        CGPoint tap = [self.view convertPoint:flocation fromView:self.view.window];
+        CGPoint tapBar = [self.navigationController.navigationBar convertPoint:flocation fromView:self.view.window];
+        if (![self.view pointInside:tap withEvent:nil] && ![self.navigationController.navigationBar pointInside:tapBar withEvent:nil])
+        {
+            // Remove the recognizer first so it's view.window is valid.
+            [self.view.window removeGestureRecognizer:sender];
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    }
 }
 
 @end

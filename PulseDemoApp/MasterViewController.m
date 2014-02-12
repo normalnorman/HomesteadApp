@@ -34,14 +34,14 @@
     //creating nav array
     _objects = [[NSMutableArray alloc] init];
     
-    NavigationObject *navItem = [[NavigationObject alloc] init];
+    /*NavigationObject *navItem = [[NavigationObject alloc] init];
     navItem.name = @"Search";
     navItem.icon = @"Search";
     navItem.action = 0;
     
-    [_objects addObject:navItem];
+    [_objects addObject:navItem];*/
 
-    navItem = [[NavigationObject alloc] init];
+    NavigationObject *navItem = [[NavigationObject alloc] init];
     navItem.name = @"Inventory";
     navItem.icon = @"Inventory";
     navItem.action = 1;
@@ -51,6 +51,13 @@
     navItem = [[NavigationObject alloc] init];
     navItem.name = @"Customers";
     navItem.icon = @"Customers";
+    navItem.action = 2;
+    
+    [_objects addObject:navItem];
+    
+    navItem = [[NavigationObject alloc] init];
+    navItem.name = @"Scan Barcode";
+    navItem.icon = @"Barcode";
     navItem.action = 2;
     
     [_objects addObject:navItem];
@@ -89,7 +96,7 @@
     NavigationObject *currentNavItem = _objects[indexPath.row];
     //NSDate *object = _objects[indexPath.row];
     cell.textLabel.text = [currentNavItem name];
-    cell.imageView.image = [UIImage imageNamed:currentNavItem.name];
+    cell.imageView.image = [UIImage imageNamed:currentNavItem.icon];
     return cell;
 }
 
@@ -163,6 +170,36 @@
     DetailViewController *vc = [segue destinationViewController];
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     NavigationObject *object = _objects[indexPath.row];
+}
+
+- (BOOL)splitViewController:(UISplitViewController*)svc shouldHideViewController:(UIViewController *)vc inOrientation:(UIInterfaceOrientation)orientation
+{
+    return YES;
+}
+
+#pragma mark - UISearchBarDelegate
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *) searchBar
+{
+    [searchBar resignFirstResponder];
+}
+
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
+{
+    [searchBar setShowsCancelButton:YES animated:YES];
+}
+
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar
+{
+    [searchBar setShowsCancelButton:NO animated:YES];
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    [searchBar resignFirstResponder];
+    NSLog(@"Search started");
+    DepartmentViewController *departmentVC = [self.storyboard instantiateViewControllerWithIdentifier:@"Main"];
+    [self.detailViewController.navigationController pushViewController:departmentVC animated:YES];
 }
 
 @end

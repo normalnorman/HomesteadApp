@@ -10,7 +10,7 @@
 
 @class DetailViewController;
 
-@interface MasterViewController : UITableViewController
+@interface MasterViewController : UITableViewController <UISplitViewControllerDelegate, UISearchBarDelegate>
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
 
