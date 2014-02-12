@@ -10,11 +10,9 @@
 #import "MCRotatingCarousel.h"
 
 @interface ProductDetailViewController ()<MCRotatingCarouselDataSource, MCRotatingCarouselDelegate>{
-    
+    NSMutableArray *_images;
 }
 - (IBAction)dismiss:(id)sender;
-
-@property (strong) NSArray *items;
 
 @end
 
@@ -22,27 +20,17 @@
     
 }
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        self.items = @[
-                       
-                       [UIImage imageNamed:@"gcl018_1805.jpg"],
-                       [UIImage imageNamed:@"gcl018_1806.jpg"],
-                       [UIImage imageNamed:@"gcl018_1808.jpg"],
-                       [UIImage imageNamed:@"gcl018_1809.jpg"]
-                       ];
-    }
-    return self;
-}
-
-- (void)viewDidLoad
+-(void)viewDidLoad
 {
     [super viewDidLoad];
-	/*self.view.backgroundColor = [UIColor whiteColor];
+    _images = [[NSMutableArray alloc] init];
     
-    MCRotatingCarousel *carousel = [[MCRotatingCarousel alloc]initWithFrame:self.view.bounds];
+    [_images addObject:@"jeans5" ];
+    [_images addObject:@"jeans6"];
+    [_images addObject:@"jeans7"];
+    
+    
+    MCRotatingCarousel *carousel = [[MCRotatingCarousel alloc]initWithFrame:CGRectMake(0, 60, 768, 650)];
     carousel.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     carousel.delegate = self;
     carousel.dataSource = self;
@@ -50,9 +38,10 @@
     //carousel.pageControl.pageIndicatorTintColor = [UIColor cyanColor];
     [self.view addSubview:carousel];
     
-    [carousel reloadData];*/
+    [carousel reloadData];
 
 }
+
 #pragma mark - MCRotatingCarouselDataSource
 -(UIView *)rotatingCarousel:(MCRotatingCarousel *)carousel viewForItemAtIndex:(NSUInteger)index
 {
@@ -60,18 +49,26 @@
     //UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 150, 150)];
     //view.backgroundColor = self.items[index];
     
-    UIImageView *imageView = [[UIImageView alloc] initWithImage:self.items[index]];
-    /*view.layer.borderColor = [[UIColor darkGrayColor] CGColor];
-     view.layer.borderWidth = 2;*/
-    imageView.frame = CGRectMake(0, 0, 150, 150);
-    imageView.center = imageView.superview.center;
+    NSLog(@"Image was %@",_images[index]);
+    UIView *imageView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 150, 250)];
     
-    return (UIView*)imageView;
+    //UIImageView *imageView = [[UIImageView alloc] initWithImage:];
+    //[imageView setImage:[UIImage imageNamed:@"Home"]];
+    [imageView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:_images[index]]]];
+    imageView.layer.borderColor = [[UIColor lightGrayColor] CGColor];
+    imageView.layer.borderWidth = 1;
+    //imageView.frame = CGRectMake(0, 0, 150, 150);
+    //imageView.center = imageView.superview.center;
+    
+    /*self.view.backgroundColor = [UIColor lightGrayColor];
+    self.view.layer.borderWidth = 1;*/
+    
+    return imageView;
 }
 
 -(NSUInteger)numberOfItemsInRotatingCarousel:(MCRotatingCarousel *)carousel
 {
-    return self.items.count;
+    return _images.count;
 }
 
 #pragma mark - MCRotatingCarouselDelegate

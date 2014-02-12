@@ -49,16 +49,30 @@
     [_objects addObject:navItem];
     
     navItem = [[NavigationObject alloc] init];
-    navItem.name = @"Customers";
+    navItem.name = @"Style Guide";
     navItem.icon = @"Customers";
     navItem.action = 2;
     
     [_objects addObject:navItem];
     
     navItem = [[NavigationObject alloc] init];
+    navItem.name = @"Client List";
+    navItem.icon = @"Barcode";
+    navItem.action = 3;
+    
+    [_objects addObject:navItem];
+    
+    navItem = [[NavigationObject alloc] init];
+    navItem.name = @"Check Out";
+    navItem.icon = @"Barcode";
+    navItem.action = 4;
+    
+    [_objects addObject:navItem];
+    
+    navItem = [[NavigationObject alloc] init];
     navItem.name = @"Scan Barcode";
     navItem.icon = @"Barcode";
-    navItem.action = 2;
+    navItem.action = 4;
     
     [_objects addObject:navItem];
     
@@ -68,7 +82,7 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;*/
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
-    self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
+    //self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
 }
 
 - (void)didReceiveMemoryWarning
@@ -96,14 +110,14 @@
     NavigationObject *currentNavItem = _objects[indexPath.row];
     //NSDate *object = _objects[indexPath.row];
     cell.textLabel.text = [currentNavItem name];
-    cell.imageView.image = [UIImage imageNamed:currentNavItem.icon];
+    //cell.imageView.image = [UIImage imageNamed:currentNavItem.icon];
     return cell;
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
-    return YES;
+    return NO;
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
@@ -145,7 +159,7 @@
                 //InventoryViewController *ivc = [[InventoryViewController alloc] init];
                 //newDetailViewController = ivc;
                 DepartmentViewController *dvc = [[DepartmentViewController alloc] init];
-                self.detailViewController = (UIViewController*)dvc;
+                //self.detailViewController = (UIViewController*)dvc;
             }
             break;
         case 1:

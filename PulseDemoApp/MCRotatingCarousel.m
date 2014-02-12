@@ -53,7 +53,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         
-        self.sideOffset = self.bounds.size.width/4;
+        self.sideOffset = self.bounds.size.width/8;
         self.sideScale = 0.7;
         self.originScale = 0.25;
         self.scrollScale = 0.65;

@@ -34,96 +34,142 @@
     /*self.productImages = @[@"store_photos/wsh005_0501.jpg", @"store_photos/wsh005_0502.jpg", @"store_photos/wsh005_0503.jpg", @"store_photos/wsh005_0509.jpg", @"store_photos/wsh005_0510.jpg", @"store_photos/wsh005_0512.jpg", @"store_photos/wsh005_0507.jpg", @"store_photos/wsh005_0508.jpg" ];*/
     
     InventoryItem *item = [[InventoryItem alloc] init];
-    item.name = @"Shoe 1";
-    item.description = @"Shoe 1";
+    item.name = @"Signature Jeans";
+    item.description = @"Signature Jeans";
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wcl004_0402.jpg";
+    item.img = @"jeans1.png";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
-    item.name = @"Shoe 2";
-    item.description = @"Shoe 2";
+    item.name = @"Flounce Denim Jeans";
+    item.description = @"Flounce Denim Jeans";
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wcl004_0405.jpg";
+    item.img = @"jeans2.png";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
-    item.name = @"Shoe 3";
-    item.description = @"Shoe 3";
+    item.name = @"Boyfriend Jeans";
+    item.description = @"Boyfriend Jeans";
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wcl004_0408.jpg";
+    item.img = @"jeans3.png";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
-    item.name = @"Shoe 4";
-    item.description = @"Shoe 4";
+    item.name = @"Deep Dye Jeans";
+    item.description = @"Deep Dye Jeans";
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wcl004_0410.jpg";
+    item.img = @"jeans4.png";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
-    item.name = @"Shoe 5";
-    item.description = @"Shoe 5";
+    item.name = @"Weekender Jeans";
+    item.description = @"Weekender Jeans";
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wcl004_0412.jpg";
+    item.img = @"jeans5.png";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
-    item.name = @"Shoe 6";
-    item.description = @"Shoe 6";
+    item.name = @"Black Legging Jeans";
+    item.description = @"Black Legging Jeans";
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wcl004_0413.jpg";
+    item.img = @"jeans6.png";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
-    item.name = @"Shoe 7";
-    item.description = @"Shoe 7";
+    item.name = @"Bootcut Jeans";
+    item.description = @"Bootcut Jeans";
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wcl004_0415.jpg";
+    item.img = @"jeans7.png";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
-    item.name = @"Shoe 8";
-    item.description = @"Shoe 8";
+    item.name = @"Bicycle Jeans";
+    item.description = @"Bicycle Jeans";
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wcl004_0416.jpg";
+    item.img = @"jeans8.png";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
-    item.name = @"Shoe 9";
-    item.description = @"Shoe 9";
+    item.name = @"Moto Jeans";
+    item.description = @"Moto Jeans";
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wcl004_0417.jpg";
+    item.img = @"jeans9.png";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
-    item.name = @"Shoe 10";
-    item.description = @"Shoe 10";
+    item.name = @"Wide Leg Jeans";
+    item.description = @"Wide Leg Jeans";
     item.inStock = YES;
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wcl004_0418.jpg";
+    item.img = @"jeans10.png";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
+    item.name = @"Deep Dye Jeans";
+    item.description = @"Deep Dye Jeans";
+    item.inStock = YES;
+    item.category = @"Shoes";
+    item.sizes = @[@"5", @"6", @"7", @"8"];
+    item.img = @"jeans4.png";
+    [self.productImages addObject:item];
+    
+    item = [[InventoryItem alloc] init];
+    item.name = @"Boyfriend Jeans";
+    item.description = @"Boyfriend Jeans";
+    item.inStock = YES;
+    item.category = @"Shoes";
+    item.sizes = @[@"5", @"6", @"7", @"8"];
+    item.img = @"jeans3.png";
+    [self.productImages addObject:item];
+    
+    item = [[InventoryItem alloc] init];
+    item.name = @"Weekender Jeans";
+    item.description = @"Weekender Jeans";
+    item.inStock = YES;
+    item.category = @"Shoes";
+    item.sizes = @[@"5", @"6", @"7", @"8"];
+    item.img = @"jeans5.png";
+    [self.productImages addObject:item];
+    
+    item = [[InventoryItem alloc] init];
+    item.name = @"Bootcut Jeans";
+    item.description = @"Bootcut Jeans";
+    item.inStock = YES;
+    item.category = @"Shoes";
+    item.sizes = @[@"5", @"6", @"7", @"8"];
+    item.img = @"jeans7.png";
+    [self.productImages addObject:item];
+    
+    item = [[InventoryItem alloc] init];
+    item.name = @"Flounce Denim Jeans";
+    item.description = @"Flounce Denim Jeans";
+    item.inStock = YES;
+    item.category = @"Shoes";
+    item.sizes = @[@"5", @"6", @"7", @"8"];
+    item.img = @"jeans2.png";
+    [self.productImages addObject:item];
+    
+    
+    /*item = [[InventoryItem alloc] init];
     item.name = @"Shoe 11";
     item.description = @"Shoe 11";
     item.inStock = YES;
@@ -175,7 +221,7 @@
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
     item.img = @"wcl004_0402.jpg";
-    [self.productImages addObject:item];
+    [self.productImages addObject:item]; */
 }
 
 - (void)didReceiveMemoryWarning
@@ -207,7 +253,7 @@
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(150.0, 150.0);
+    return CGSizeMake(170.0, 265.0);
 }
 
 -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
