@@ -165,6 +165,7 @@
 
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
 {
+    searchBar.text = nil; 
     [searchBar setShowsCancelButton:YES animated:YES];
 }
 
@@ -192,6 +193,8 @@
             DepartmentViewController *departmentVC = [self.storyboard instantiateViewControllerWithIdentifier:@"Main"];
             [self.detailViewController.navigationController pushViewController:departmentVC animated:YES];
             //todo: hide flyout
+            
+            /*[self.popoverController dismissPopoverAnimated:YES];*/
         }
         break;
     }
