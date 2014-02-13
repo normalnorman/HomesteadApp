@@ -8,10 +8,12 @@
 
 #import "DetailViewController.h"
 #import "InventoryViewCell.h"
+#import "MILTransitionDelegate.h"
 
 @interface DetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 @property (strong, nonatomic) NSArray *categoryImages;
+@property (nonatomic, strong) id<UIViewControllerTransitioningDelegate> transitioningDelegate;
 - (void)configureView;
 @end
 
@@ -49,6 +51,7 @@
     [self configureView];
     
     self.categoryImages = @[@"wcl004_0402.jpg", @"wcl004_0405.jpg", @"wcl004_0406.jpg", @"wcl004_0407.jpg", @"wcl004_0408.jpg", @"wcl004_0410.jpg",@"wcl004_0412.jpg"];
+    self.transitioningDelegate = [[MILTransitionDelegate alloc] init];
 }
 
 - (void)didReceiveMemoryWarning

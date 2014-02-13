@@ -8,11 +8,18 @@
 
 #import "ProductDetailViewController.h"
 #import "MCRotatingCarousel.h"
+#import "CustomerInformationViewController.h"
+#import "MILTransitionDelegate.h"
 
 @interface ProductDetailViewController ()<MCRotatingCarouselDataSource, MCRotatingCarouselDelegate>{
     NSMutableArray *_images;
 }
+
+@property (nonatomic, strong) id<UIViewControllerTransitioningDelegate> transitioningDelegate;
+
 - (IBAction)dismiss:(id)sender;
+- (IBAction)showCustomerForm:(id)sender;
+- (IBAction)requestClicked:(id)sender;
 
 @end
 
@@ -25,9 +32,9 @@
     [super viewDidLoad];
     _images = [[NSMutableArray alloc] init];
     
-    [_images addObject:@"jeans5" ];
-    [_images addObject:@"jeans6"];
-    [_images addObject:@"jeans7"];
+    [_images addObject:@"angle1" ];
+    [_images addObject:@"angle2"];
+    [_images addObject:@"angle3"];
     
     
     MCRotatingCarousel *carousel = [[MCRotatingCarousel alloc]initWithFrame:CGRectMake(0, 60, 768, 550)];
@@ -52,7 +59,7 @@
     //view.backgroundColor = self.items[index];
     
     NSLog(@"Image was %@",_images[index]);
-    UIView *imageView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 150, 250)];
+    UIView *imageView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 185, 250)];
     
     //UIImageView *imageView = [[UIImageView alloc] initWithImage:];
     //[imageView setImage:[UIImage imageNamed:@"Home"]];
@@ -107,4 +114,22 @@
 - (IBAction)dismiss:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+- (IBAction)showCustomerForm:(id)sender {
+    //ModalViewController *incoming = [[ModalViewController alloc] init];
+    CustomerInformationViewController *customerForm = [self.storyboard instantiateViewControllerWithIdentifier:@"CustomerForm"];
+    /*customerForm.transitioningDelegate = self.transitioningDelegate;
+    customerForm.modalPresentationStyle = UIModalPresentationCustom;*/
+    customerForm.modalPresentationStyle = UIModalTransitionStyleCrossDissolve;
+    
+    [self presentViewController:customerForm animated:YES completion:^{
+        NSLog(@"Completed");
+    }];
+    
+}
+
+- (IBAction)requestClicked:(id)sender {
+    [self showCustomerForm:sender];
+}
+
 @end

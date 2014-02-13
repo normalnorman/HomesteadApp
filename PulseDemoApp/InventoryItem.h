@@ -11,8 +11,9 @@
 @interface InventoryItem : NSObject
 @property (nonatomic)NSString *name;
 @property (nonatomic)NSString *description;
-@property (nonatomic)BOOL inStock;
+@property (nonatomic)NSString *inStock;
 @property (nonatomic)NSString *category;
-@property (nonatomic)NSArray *sizes;
+@property (nonatomic)NSArray  *sizes;
 @property (nonatomic)NSString *img;
+@property (nonatomic)NSString *price;
 @end

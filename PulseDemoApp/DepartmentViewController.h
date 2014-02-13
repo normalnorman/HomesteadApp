@@ -11,6 +11,5 @@
 @interface DepartmentViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-@property (nonatomic, weak) IBOutlet UIImageView *img;
-@property (nonatomic, weak) IBOutlet UILabel *label;
+
 @end

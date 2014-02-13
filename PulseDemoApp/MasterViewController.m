@@ -10,7 +10,6 @@
 #import "DetailViewController.h"
 #import "NavigationObject.h"
 #import "InventoryViewController.h"
-#import "DetailViewManager.h"
 #import "DetailViewController.h"
 #import "DepartmentViewController.h"
 
@@ -77,12 +76,7 @@
     [_objects addObject:navItem];
     
     // Do any additional setup after loading the view, typically from a nib.
-    /*self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;*/
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
-    //self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
 }
 
 - (void)didReceiveMemoryWarning
@@ -108,9 +102,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
     NavigationObject *currentNavItem = _objects[indexPath.row];
-    //NSDate *object = _objects[indexPath.row];
     cell.textLabel.text = [currentNavItem name];
-    //cell.imageView.image = [UIImage imageNamed:currentNavItem.icon];
     return cell;
 }
 
@@ -149,34 +141,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NavigationObject *object = _objects[indexPath.row];
-    //DetailViewManager *detailViewManager = (DetailViewManager*)self.splitViewController.delegate;
-    //UIViewController <SubstitutableDetailViewController> *newDetailViewController = nil;
-    
-    switch (object.action) {
-        case 0:
-            {
-                NSLog(@"User tapped nav item 1");
-                //InventoryViewController *ivc = [[InventoryViewController alloc] init];
-                //newDetailViewController = ivc;
-                DepartmentViewController *dvc = [[DepartmentViewController alloc] init];
-                //self.detailViewController = (UIViewController*)dvc;
-            }
-            break;
-        case 1:
-            NSLog(@"User tapped nav item 2");
-            break;
-        case 2:
-            NSLog(@"User tapped nav item 3");
-            break;
-        default:
-            break;
-    }
-    //detailViewManager.detailViewController = newDetailViewController;
-    //self.detailViewController = newDetailViewController;
-    
-    //self.detailViewController.detailItem = object;
-
-    //InventoryViewController *ivc = [[InventoryViewController alloc] init];
+    [self drillToPage:object.action];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -212,8 +177,24 @@
 {
     [searchBar resignFirstResponder];
     NSLog(@"Search started");
-    DepartmentViewController *departmentVC = [self.storyboard instantiateViewControllerWithIdentifier:@"Main"];
-    [self.detailViewController.navigationController pushViewController:departmentVC animated:YES];
+    [self drillToPage:0];
+}
+
+-(void)drillToPage:(int)pageId
+{
+    switch (pageId) {
+        case 0:
+        case 1:
+        case 2:
+        default:
+        {
+            NSLog(@"User tapped nav item 1");
+            DepartmentViewController *departmentVC = [self.storyboard instantiateViewControllerWithIdentifier:@"Main"];
+            [self.detailViewController.navigationController pushViewController:departmentVC animated:YES];
+            //todo: hide flyout
+        }
+        break;
+    }
 }
 
 @end
