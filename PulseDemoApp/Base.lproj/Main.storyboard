@@ -135,7 +135,7 @@
                                     <constraint firstAttribute="width" constant="129" id="EF3-1H-44L"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="nav_item2" translatesAutoresizingMaskIntoConstraints="NO" id="iTn-WL-2Gq">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="nav_item3" translatesAutoresizingMaskIntoConstraints="NO" id="iTn-WL-2Gq">
                                 <rect key="frame" x="553" y="171" width="157" height="157"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -159,7 +159,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sale2" translatesAutoresizingMaskIntoConstraints="NO" id="2CL-bi-0jc">
-                                <rect key="frame" x="515" y="372" width="510" height="217"/>
+                                <rect key="frame" x="514" y="371" width="510" height="217"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TRENDING STYLES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dj-Gh-r44">
@@ -380,46 +380,67 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K4Y-Fa-hzs">
-                                <rect key="frame" x="78" y="338" width="221" height="30"/>
+                                <rect key="frame" x="78" y="318" width="221" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <color key="tintColor" red="0.086274512110000007" green="0.62745100259999997" blue="0.84313732389999996" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" red="0.086274512110000007" green="0.62745100259999997" blue="0.84313732389999996" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                <connections>
+                                    <action selector="changedPhoneNumber:" destination="AbV-zL-xwT" eventType="editingDidEnd" id="trF-vA-gYl"/>
+                                    <action selector="saveInfo:" destination="AbV-zL-xwT" eventType="valueChanged" id="yZ4-9g-Tmm"/>
+                                    <outlet property="delegate" destination="AbV-zL-xwT" id="jkF-LR-V1C"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="reH-0m-pHy">
-                                <rect key="frame" x="78" y="287" width="221" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="reH-0m-pHy">
+                                <rect key="frame" x="78" y="267" width="221" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" red="0.086274512110000007" green="0.62745100259999997" blue="0.84313732389999996" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" red="0.086274512110000007" green="0.62745100259999997" blue="0.84313732389999996" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="changedName:" destination="AbV-zL-xwT" eventType="editingDidEnd" id="aDR-Jp-KWk"/>
+                                    <action selector="saveInfo:" destination="AbV-zL-xwT" eventType="valueChanged" id="3GZ-JV-kuA"/>
+                                    <outlet property="delegate" destination="AbV-zL-xwT" id="XDR-7M-k72"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meq-0o-DL3">
-                                <rect key="frame" x="19" y="342" width="54" height="21"/>
+                                <rect key="frame" x="19" y="322" width="54" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
                                 <color key="textColor" red="0.086274512112140656" green="0.62745100259780884" blue="0.84313732385635376" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="alk-8E-xr7">
-                                <rect key="frame" x="78" y="389" width="221" height="30"/>
+                                <rect key="frame" x="78" y="369" width="221" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <color key="tintColor" red="0.086274512110000007" green="0.62745100259999997" blue="0.84313732389999996" alpha="1" colorSpace="deviceRGB"/>
+                                <color key="textColor" red="0.086274512110000007" green="0.62745100259999997" blue="0.84313732389999996" alpha="1" colorSpace="deviceRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                <connections>
+                                    <action selector="changedEmail:" destination="AbV-zL-xwT" eventType="editingDidEnd" id="g1w-fE-PKH"/>
+                                    <action selector="saveInfo:" destination="AbV-zL-xwT" eventType="valueChanged" id="e9y-h6-KVu"/>
+                                    <outlet property="delegate" destination="AbV-zL-xwT" id="1Gf-SX-Rnr"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zog-Fg-LZw">
-                                <rect key="frame" x="19" y="393" width="47" height="21"/>
+                                <rect key="frame" x="19" y="373" width="47" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
                                 <color key="textColor" red="0.086274512112140656" green="0.62745100259780884" blue="0.84313732385635376" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Notify when is available:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kib-mK-RIm">
-                                <rect key="frame" x="19" y="442" width="185" height="21"/>
+                                <rect key="frame" x="19" y="422" width="185" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
                                 <color key="textColor" red="0.086274512112140656" green="0.62745100259780884" blue="0.84313732385635376" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvr-3M-muR">
-                                <rect key="frame" x="19" y="291" width="51" height="21"/>
+                                <rect key="frame" x="19" y="271" width="51" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
                                 <color key="textColor" red="0.086274512112140656" green="0.62745100259780884" blue="0.84313732385635376" alpha="1" colorSpace="deviceRGB"/>
@@ -482,11 +503,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eT6-uA-4hb">
-                                <rect key="frame" x="250" y="437" width="51" height="31"/>
+                                <rect key="frame" x="250" y="417" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nph-dG-2cp">
-                                <rect key="frame" x="253" y="500" width="49" height="30"/>
+                                <rect key="frame" x="253" y="480" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit">
                                     <color key="titleColor" red="0.40798259601229009" green="0.49829655008026774" blue="0.55946416440217384" alpha="1" colorSpace="calibratedRGB"/>
@@ -509,7 +530,11 @@
                                                 <action selector="dismiss:" destination="AbV-zL-xwT" id="GoR-Gr-lBa"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Save" id="mYW-wz-kEL"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="mYW-wz-kEL">
+                                            <connections>
+                                                <action selector="saveCustomer:" destination="AbV-zL-xwT" id="T2o-So-UZa"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -530,6 +555,11 @@
                         </constraints>
                     </view>
                     <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="emailField" destination="alk-8E-xr7" id="7qB-42-5uA"/>
+                        <outlet property="nameField" destination="reH-0m-pHy" id="peg-sy-KdI"/>
+                        <outlet property="phoneField" destination="K4Y-Fa-hzs" id="8Wy-5E-Ub3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7B4-9n-9rr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -704,11 +734,6 @@
                                 <state key="normal" image="instock">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="jMJ-g0-cmh" kind="popover" popoverAnchorView="KPQ-XB-CCS" id="WdK-mU-CAw">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES"/>
-                                    </segue>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOU-8F-A20">
                                 <rect key="frame" x="215" y="458" width="40" height="40"/>
@@ -743,11 +768,6 @@
                                 <state key="normal" image="instock">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="jMJ-g0-cmh" kind="popover" popoverAnchorView="BUK-O4-nWF" id="hiM-Ax-HAN">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES"/>
-                                    </segue>
-                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMw-no-tkf">
                                 <rect key="frame" x="37" y="469" width="15" height="22"/>
@@ -798,11 +818,6 @@
                                 <state key="normal" image="instock">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="jMJ-g0-cmh" kind="popover" popoverAnchorView="n57-OH-bdt" id="o8i-z6-aRw">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES"/>
-                                    </segue>
-                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="12" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UlJ-TS-ZG7">
                                 <rect key="frame" x="318" y="462" width="33" height="36"/>
@@ -818,11 +833,6 @@
                                 <state key="normal" image="instock">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="jMJ-g0-cmh" kind="popover" popoverAnchorView="t8A-yr-Mkx" id="liI-pA-4ef">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES"/>
-                                    </segue>
-                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="14" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hiy-xY-ziN">
                                 <rect key="frame" x="366" y="462" width="33" height="36"/>
@@ -1131,6 +1141,7 @@
         <image name="map" width="318" height="292"/>
         <image name="nav_item1" width="278" height="278"/>
         <image name="nav_item2" width="278" height="278"/>
+        <image name="nav_item3" width="278" height="278"/>
         <image name="nav_item4" width="278" height="278"/>
         <image name="outofstock" width="40" height="40"/>
         <image name="product_title" width="1141" height="162"/>

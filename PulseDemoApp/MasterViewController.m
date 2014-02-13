@@ -9,7 +9,6 @@
 #import "MasterViewController.h"
 #import "DetailViewController.h"
 #import "NavigationObject.h"
-#import "InventoryViewController.h"
 #import "DetailViewController.h"
 #import "DepartmentViewController.h"
 
@@ -146,9 +145,10 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    DetailViewController *vc = [segue destinationViewController];
+    //TODO: pass selected object here
+    /*DetailViewController *vc = [segue destinationViewController];
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-    NavigationObject *object = _objects[indexPath.row];
+    NavigationObject *object = _objects[indexPath.row];*/
 }
 
 - (BOOL)splitViewController:(UISplitViewController*)svc shouldHideViewController:(UIViewController *)vc inOrientation:(UIInterfaceOrientation)orientation
@@ -165,7 +165,7 @@
 
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar
 {
-    searchBar.text = nil; 
+    searchBar.text = nil;
     [searchBar setShowsCancelButton:YES animated:YES];
 }
 

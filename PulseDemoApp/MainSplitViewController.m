@@ -9,7 +9,7 @@
 #import "MainSplitViewController.h"
 
 @interface MainSplitViewController ()
-
+@property (nonatomic, weak)UIPopoverController *popover;
 @end
 
 @implementation MainSplitViewController
@@ -33,6 +33,19 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)splitViewController:(UISplitViewController*)svc popoverController:(UIPopoverController*)pc willPresentViewController:(UIViewController *)aViewController{
+    self.popover = pc;
+    if ([pc isPopoverVisible]) {
+        [pc dismissPopoverAnimated:YES];
+    }
+}
+
+-(void)hidePopover
+{
+    if(self.popover)
+        [self.popover dismissPopoverAnimated:YES];
 }
 
 

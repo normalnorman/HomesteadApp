@@ -26,8 +26,6 @@
 		724AA83018A8454B00560649 /* NavigationObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AA82F18A8454B00560649 /* NavigationObject.m */; };
 		724AA83318A845FF00560649 /* InventoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AA83218A845FF00560649 /* InventoryItem.m */; };
 		724AA83F18A8822C00560649 /* InventoryViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AA83E18A8822C00560649 /* InventoryViewCell.m */; };
-		724AA84A18A92C2B00560649 /* InventoryNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AA84918A92C2B00560649 /* InventoryNavigationController.m */; };
-		724AA85018A9358300560649 /* InventoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AA84F18A9358300560649 /* InventoryViewController.m */; };
 		724AA85318A97D0100560649 /* DepartmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AA85218A97D0100560649 /* DepartmentViewController.m */; };
 		724AA86518A97F3600560649 /* wsh005_0501.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 724AA85518A97F3600560649 /* wsh005_0501.jpg */; };
 		724AA86618A97F3600560649 /* wsh005_0502.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 724AA85618A97F3600560649 /* wsh005_0502.jpg */; };
@@ -66,6 +64,7 @@
 		7280BCAC18AC75BB00648A1F /* CustomerInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280BCAB18AC75BB00648A1F /* CustomerInformationViewController.m */; };
 		7280BCAF18AC8F4E00648A1F /* MILTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280BCAE18AC8F4E00648A1F /* MILTransitionDelegate.m */; };
 		7280BCB218AC900F00648A1F /* MILTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280BCB118AC900F00648A1F /* MILTransitionController.m */; };
+		7280BCB918AD2EC500648A1F /* CustomerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280BCB818AD2EC500648A1F /* CustomerObject.m */; };
 		745428A418AAC59000E2398E /* MCRotatingCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 745428A318AAC59000E2398E /* MCRotatingCarousel.m */; };
 		745428A718AAC71900E2398E /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745428A618AAC71900E2398E /* ProductDetailViewController.m */; };
 		747F97D618ABE09000554F55 /* inventory_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F97D518ABE09000554F55 /* inventory_bg.png */; };
@@ -94,7 +93,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		724AA7EE18A53D5800560649 /* PulseDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulseDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		724AA7EE18A53D5800560649 /* Metropolitan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metropolitan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		724AA7F118A53D5800560649 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		724AA7F318A53D5800560649 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		724AA7F518A53D5800560649 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -122,10 +121,6 @@
 		724AA83218A845FF00560649 /* InventoryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryItem.m; sourceTree = "<group>"; };
 		724AA83D18A8822C00560649 /* InventoryViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryViewCell.h; sourceTree = "<group>"; };
 		724AA83E18A8822C00560649 /* InventoryViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryViewCell.m; sourceTree = "<group>"; };
-		724AA84818A92C2B00560649 /* InventoryNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryNavigationController.h; sourceTree = "<group>"; };
-		724AA84918A92C2B00560649 /* InventoryNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryNavigationController.m; sourceTree = "<group>"; };
-		724AA84E18A9358300560649 /* InventoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InventoryViewController.h; sourceTree = "<group>"; };
-		724AA84F18A9358300560649 /* InventoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InventoryViewController.m; sourceTree = "<group>"; };
 		724AA85118A97D0100560649 /* DepartmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepartmentViewController.h; sourceTree = "<group>"; };
 		724AA85218A97D0100560649 /* DepartmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartmentViewController.m; sourceTree = "<group>"; };
 		724AA85518A97F3600560649 /* wsh005_0501.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wsh005_0501.jpg; sourceTree = "<group>"; };
@@ -170,6 +165,8 @@
 		7280BCAE18AC8F4E00648A1F /* MILTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MILTransitionDelegate.m; sourceTree = "<group>"; };
 		7280BCB018AC900F00648A1F /* MILTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MILTransitionController.h; path = ../MILTransitionController.h; sourceTree = "<group>"; };
 		7280BCB118AC900F00648A1F /* MILTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MILTransitionController.m; path = ../MILTransitionController.m; sourceTree = "<group>"; };
+		7280BCB718AD2EC500648A1F /* CustomerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerObject.h; sourceTree = "<group>"; };
+		7280BCB818AD2EC500648A1F /* CustomerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerObject.m; sourceTree = "<group>"; };
 		745428A218AAC59000E2398E /* MCRotatingCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCRotatingCarousel.h; sourceTree = "<group>"; };
 		745428A318AAC59000E2398E /* MCRotatingCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCRotatingCarousel.m; sourceTree = "<group>"; };
 		745428A518AAC71900E2398E /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductDetailViewController.h; path = ../ProductDetailViewController.h; sourceTree = "<group>"; };
@@ -226,7 +223,7 @@
 		724AA7EF18A53D5800560649 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				724AA7EE18A53D5800560649 /* PulseDemoApp.app */,
+				724AA7EE18A53D5800560649 /* Metropolitan.app */,
 				724AA81218A53D5800560649 /* PulseDemoAppTests.xctest */,
 			);
 			name = Products;
@@ -253,24 +250,18 @@
 				724AA85418A97F2B00560649 /* store_photos */,
 				724AA80018A53D5800560649 /* AppDelegate.h */,
 				724AA80118A53D5800560649 /* AppDelegate.m */,
-				724AA80918A53D5800560649 /* DetailViewController.h */,
-				724AA80A18A53D5800560649 /* DetailViewController.m */,
-				724AA84818A92C2B00560649 /* InventoryNavigationController.h */,
-				724AA84918A92C2B00560649 /* InventoryNavigationController.m */,
-				7280BCAA18AC75BB00648A1F /* CustomerInformationViewController.h */,
-				7280BCAB18AC75BB00648A1F /* CustomerInformationViewController.m */,
-				724AA87818AA8ED900560649 /* MainSplitViewController.h */,
-				724AA87918AA8ED900560649 /* MainSplitViewController.m */,
-				724AA84E18A9358300560649 /* InventoryViewController.h */,
-				724AA84F18A9358300560649 /* InventoryViewController.m */,
 				724AA80618A53D5800560649 /* MasterViewController.h */,
 				724AA80718A53D5800560649 /* MasterViewController.m */,
-				7280BCAD18AC8F4E00648A1F /* MILTransitionDelegate.h */,
-				7280BCAE18AC8F4E00648A1F /* MILTransitionDelegate.m */,
+				724AA80918A53D5800560649 /* DetailViewController.h */,
+				724AA80A18A53D5800560649 /* DetailViewController.m */,
+				724AA87818AA8ED900560649 /* MainSplitViewController.h */,
+				724AA87918AA8ED900560649 /* MainSplitViewController.m */,
 				724AA85118A97D0100560649 /* DepartmentViewController.h */,
 				724AA85218A97D0100560649 /* DepartmentViewController.m */,
 				745428A518AAC71900E2398E /* ProductDetailViewController.h */,
 				745428A618AAC71900E2398E /* ProductDetailViewController.m */,
+				7280BCAA18AC75BB00648A1F /* CustomerInformationViewController.h */,
+				7280BCAB18AC75BB00648A1F /* CustomerInformationViewController.m */,
 				724AA80C18A53D5800560649 /* Images.xcassets */,
 				724AA80318A53D5800560649 /* Main.storyboard */,
 				724AA7F818A53D5800560649 /* Supporting Files */,
@@ -361,6 +352,8 @@
 		7280BCB418AC940800648A1F /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				7280BCAD18AC8F4E00648A1F /* MILTransitionDelegate.h */,
+				7280BCAE18AC8F4E00648A1F /* MILTransitionDelegate.m */,
 				7280BCB018AC900F00648A1F /* MILTransitionController.h */,
 				7280BCB118AC900F00648A1F /* MILTransitionController.m */,
 			);
@@ -374,6 +367,8 @@
 				724AA83218A845FF00560649 /* InventoryItem.m */,
 				724AA82E18A8454B00560649 /* NavigationObject.h */,
 				724AA82F18A8454B00560649 /* NavigationObject.m */,
+				7280BCB718AD2EC500648A1F /* CustomerObject.h */,
+				7280BCB818AD2EC500648A1F /* CustomerObject.m */,
 			);
 			name = "Data Objects";
 			sourceTree = "<group>";
@@ -425,7 +420,7 @@
 			);
 			name = PulseDemoApp;
 			productName = PulseDemoApp;
-			productReference = 724AA7EE18A53D5800560649 /* PulseDemoApp.app */;
+			productReference = 724AA7EE18A53D5800560649 /* Metropolitan.app */;
 			productType = "com.apple.product-type.application";
 		};
 		724AA81118A53D5800560649 /* PulseDemoAppTests */ = {
@@ -558,19 +553,18 @@
 				724AA83018A8454B00560649 /* NavigationObject.m in Sources */,
 				745428A418AAC59000E2398E /* MCRotatingCarousel.m in Sources */,
 				724AA80218A53D5800560649 /* AppDelegate.m in Sources */,
+				7280BCB918AD2EC500648A1F /* CustomerObject.m in Sources */,
 				724AA85318A97D0100560649 /* DepartmentViewController.m in Sources */,
 				745428A718AAC71900E2398E /* ProductDetailViewController.m in Sources */,
 				724AA80818A53D5800560649 /* MasterViewController.m in Sources */,
 				724AA87718A984DE00560649 /* ProductCollectionViewCell.m in Sources */,
 				724AA83318A845FF00560649 /* InventoryItem.m in Sources */,
-				724AA84A18A92C2B00560649 /* InventoryNavigationController.m in Sources */,
 				7280BCAF18AC8F4E00648A1F /* MILTransitionDelegate.m in Sources */,
 				724AA7FE18A53D5800560649 /* main.m in Sources */,
 				724AA80B18A53D5800560649 /* DetailViewController.m in Sources */,
 				7280BCAC18AC75BB00648A1F /* CustomerInformationViewController.m in Sources */,
 				7280BCB218AC900F00648A1F /* MILTransitionController.m in Sources */,
 				724AA83F18A8822C00560649 /* InventoryViewCell.m in Sources */,
-				724AA85018A9358300560649 /* InventoryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -704,7 +698,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PulseDemoApp/PulseDemoApp-Prefix.pch";
 				INFOPLIST_FILE = "PulseDemoApp/PulseDemoApp-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Metropolitan;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -720,7 +714,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PulseDemoApp/PulseDemoApp-Prefix.pch";
 				INFOPLIST_FILE = "PulseDemoApp/PulseDemoApp-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Metropolitan;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};

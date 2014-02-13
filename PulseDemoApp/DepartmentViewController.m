@@ -66,7 +66,7 @@
     item = [[InventoryItem alloc] init];
     item.name = @"Deep Dye Jeans";
     item.description = @"Deep Dye Jeans";
-    item.inStock = @"In Stock";
+    item.inStock = @"";
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
     item.img = @"jeans4.png";
@@ -76,7 +76,7 @@
     item = [[InventoryItem alloc] init];
     item.name = @"Weekender Jeans";
     item.description = @"Weekender Jeans";
-    item.inStock = @"In Stock";
+    item.inStock = @"";
     item.category = @"Shoes";
     item.sizes = @[@"5", @"6", @"7", @"8"];
     item.img = @"jeans5.png";
