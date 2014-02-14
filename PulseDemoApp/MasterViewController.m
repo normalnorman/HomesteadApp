@@ -26,19 +26,17 @@
     [super awakeFromNib];
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UIImage *logoImage = [UIImage imageNamed:@"welcome"];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:logoImage];
+
     //creating nav array
     _objects = [[NSMutableArray alloc] init];
     
-    /*NavigationObject *navItem = [[NavigationObject alloc] init];
-    navItem.name = @"Search";
-    navItem.icon = @"Search";
-    navItem.action = 0;
-    
-    [_objects addObject:navItem];*/
-
     NavigationObject *navItem = [[NavigationObject alloc] init];
     navItem.name = @"Inventory";
     navItem.icon = @"Inventory";

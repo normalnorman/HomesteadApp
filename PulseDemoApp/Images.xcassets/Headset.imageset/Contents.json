@@ -2,13 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "hamburger_sm.png"
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "hamburger_lg.png"
+      "filename" : "Headset@2x.png"
     }
   ],
   "info" : {

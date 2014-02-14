@@ -8,12 +8,17 @@
 
 #import "DetailViewController.h"
 #import "InventoryViewCell.h"
-#import "MILTransitionDelegate.h"
+#import "DepartmentViewController.h"
 
 @interface DetailViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *navItem1;
+@property (weak, nonatomic) IBOutlet UIImageView *navItem2;
+@property (weak, nonatomic) IBOutlet UIImageView *navItem3;
+@property (weak, nonatomic) IBOutlet UIImageView *navItem4;
+@property (nonatomic, strong) id<UIViewControllerTransitioningDelegate> transitioningDelegate;
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 @property (strong, nonatomic) NSArray *categoryImages;
-@property (nonatomic, strong) id<UIViewControllerTransitioningDelegate> transitioningDelegate;
+@property (strong, nonatomic) UITapGestureRecognizer *gestureRecognizer;
 - (void)configureView;
 @end
 
@@ -42,6 +47,9 @@
     if (self.detailItem) {
         self.detailDescriptionLabel.text = [self.detailItem description];
     }
+    
+    UIImage *logoImage = [self imageWithImage:[UIImage imageNamed:@"METROPOLITAN"] scaledToSize:CGSizeMake(155, 17)];
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:logoImage];
 }
 
 - (void)viewDidLoad
@@ -51,7 +59,8 @@
     [self configureView];
     
     self.categoryImages = @[@"wcl004_0402.jpg", @"wcl004_0405.jpg", @"wcl004_0406.jpg", @"wcl004_0407.jpg", @"wcl004_0408.jpg", @"wcl004_0410.jpg",@"wcl004_0412.jpg"];
-    self.transitioningDelegate = [[MILTransitionDelegate alloc] init];
+    
+    [self.navItem1 addGestureRecognizer:self.gestureRecognizer];
 }
 
 - (void)didReceiveMemoryWarning
@@ -132,5 +141,19 @@
     return YES;
 }
 
+- (IBAction)navTapped:(UITapGestureRecognizer *)sender {
+    NSLog(@"Nav tapped");
+}
+
+-(UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize {
+    //UIGraphicsBeginImageContext(newSize);
+    // In next line, pass 0.0 to use the current device's pixel scaling factor (and thus account for Retina resolution).
+    // Pass 1.0 to force exact pixel size.
+    UIGraphicsBeginImageContextWithOptions(newSize, NO, 0.0);
+    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
 
 @end

@@ -8,5 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CustomerInformationViewController : UIViewController <UITextFieldDelegate, UITextViewDelegate>
+@interface CustomerInformationViewController : UIViewController <UITextFieldDelegate, UITextViewDelegate, UIAlertViewDelegate>
 @end

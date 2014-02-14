@@ -11,16 +11,17 @@
 
 @interface CustomerInformationViewController ()
 @property (nonatomic, strong)CustomerObject *customerObject;
-- (IBAction)dismiss:(id)sender;
-- (IBAction)saveInfo:(id)sender;
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UITextField *phoneField;
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
+@property (weak, nonatomic) IBOutlet UIButton *callButton;
+@property (weak, nonatomic) IBOutlet UIButton *callButtonBackground;
+- (IBAction)dismiss:(id)sender;
+- (IBAction)saveInfo:(id)sender;
 - (IBAction)changedPhoneNumber:(id)sender;
 - (IBAction)changedName:(id)sender;
 - (IBAction)changedEmail:(id)sender;
 - (IBAction)saveCustomer:(id)sender;
-
 @end
 
 @implementation CustomerInformationViewController
@@ -38,7 +39,7 @@
 {
     [super viewDidLoad];
     self.customerObject = [[CustomerObject alloc] init];
-	// Do any additional setup after loading the view.
+    [self setCallButtonEnabled:NO];
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,6 +65,8 @@
 - (IBAction)changedPhoneNumber:(id)sender {
     NSLog(@"Changed phone number");
     self.customerObject.phoneNumber = self.phoneField.text;
+    
+    [self setCallButtonEnabled:YES];
 }
 
 - (IBAction)changedName:(id)sender {
@@ -77,6 +80,18 @@
 
 - (IBAction)saveCustomer:(id)sender {
     [self saveInfo:sender];
+    
+    [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(showAlert:) userInfo:nil repeats:NO];
+}
+
+- (void)showAlert:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Signature Jeans (Evolution Cotton) Available"
+                                                    message:@"Would you like to notify Ana Blank?"
+                                                   delegate:self
+                                          cancelButtonTitle:@"Cancel"
+                                          otherButtonTitles:@"OK",
+                          nil];
+    [alert show];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -95,7 +110,39 @@
     [self.view endEditing:YES];
 }
 
+-(void)setCallButtonEnabled:(BOOL)enabled
+{
+    self.callButton.hidden = !enabled;
+    /*[self.callButton setHidden:enabled];
+
+    if(enabled)
+        [self.callButton setAlpha:1.0];
+    else
+        [self.callButton setAlpha:0];*/
+    //[self.callButton]
+    //[self.callButtonBackground setEnabled:enabled];
+}
+
+-(IBAction)callUser:(id)sender
+{
+    NSString *numberToCall = self.phoneField.text;
+    NSLog(@"Number to call is %@",numberToCall);
+    //TODO: Insert Twilio code here
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel:%@", numberToCall]]];
+}
+
 - (BOOL)disablesAutomaticKeyboardDismissal {
     return NO;
 }
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
+    
+    if([title isEqualToString:@"OK"])
+    {
+        [self setCallButtonEnabled:YES];
+    }
+}
+
 @end

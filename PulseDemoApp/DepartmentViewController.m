@@ -9,6 +9,8 @@
 #import "DepartmentViewController.h"
 #import "InventoryItem.h"
 #import "ProductCollectionViewCell.h"
+#import "ProductDetailViewController.h"
+#import "MILTransitionAnimator.h"
 
 @interface DepartmentViewController ()
     @property (strong, nonatomic) NSMutableArray *productImages;
@@ -282,11 +284,42 @@
 {
     ProductCollectionViewCell *selectedCell = (ProductCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
     NSLog(@"Selected product %@", selectedCell.label.text);
+    
+    /*ProductDetailViewController *productDetail = [self.storyboard instantiateViewControllerWithIdentifier:@"ProductDetail"];
+    productDetail.transitioningDelegate = self;
+    productDetail.modalPresentationStyle = UIModalPresentationCustom;
+    productDetail.view.bounds = CGRectMake(100, 0, 768, 768);
+    
+    [self presentViewController:productDetail animated:YES completion:^{
+        productDetail.view.bounds = CGRectMake(0, 100, 768, 768);
+    }];*/
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSLog(@"");
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    [super prepareForSegue:segue sender:sender];
+    ProductDetailViewController *vc = segue.destinationViewController;
+    vc.transitioningDelegate = self;
+    vc.modalTransitionStyle = UIModalPresentationCustom;
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented
+                                                                  presentingController:(UIViewController *)presenting
+                                                                      sourceController:(UIViewController *)source {
     
+    MILTransitionAnimator *animator = [MILTransitionAnimator new];
+    [animator setBounds:CGRectMake(260, 0, 768, 768)];
+    animator.presenting = YES;
+    return animator;
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    MILTransitionAnimator *animator = [MILTransitionAnimator new];
+    return animator;
 }
 
 @end

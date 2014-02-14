@@ -9,13 +9,11 @@
 #import "ProductDetailViewController.h"
 #import "MCRotatingCarousel.h"
 #import "CustomerInformationViewController.h"
-#import "MILTransitionDelegate.h"
+#import "MILTransitionAnimator.h"
 
 @interface ProductDetailViewController ()<MCRotatingCarouselDataSource, MCRotatingCarouselDelegate>{
     NSMutableArray *_images;
 }
-
-@property (nonatomic, strong) id<UIViewControllerTransitioningDelegate> transitioningDelegate;
 
 - (IBAction)dismiss:(id)sender;
 - (IBAction)showCustomerForm:(id)sender;
@@ -29,6 +27,7 @@
 
 -(void)viewDidLoad
 {
+    //self.view.bounds = CGRectMake(150, 0, 768, 768);
     [super viewDidLoad];
     _images = [[NSMutableArray alloc] init];
     
@@ -116,20 +115,43 @@
 }
 
 - (IBAction)showCustomerForm:(id)sender {
-    //ModalViewController *incoming = [[ModalViewController alloc] init];
     CustomerInformationViewController *customerForm = [self.storyboard instantiateViewControllerWithIdentifier:@"CustomerForm"];
-    /*customerForm.transitioningDelegate = self.transitioningDelegate;
-    customerForm.modalPresentationStyle = UIModalPresentationCustom;*/
-    customerForm.modalPresentationStyle = UIModalTransitionStyleCrossDissolve;
-    
-    [self presentViewController:customerForm animated:YES completion:^{
+    customerForm.transitioningDelegate = self;
+    customerForm.modalPresentationStyle = UIModalPresentationCustom;
+    customerForm.view.frame = CGRectMake(368, 0, 400, 768);
+    [self addChildViewController:customerForm];
+    [self.view addSubview:customerForm.view];
+    /*[self presentViewController:customerForm animated:YES completion:^{
         NSLog(@"Completed");
-    }];
+    }];*/
     
 }
 
 - (IBAction)requestClicked:(id)sender {
     [self showCustomerForm:sender];
 }
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    [super prepareForSegue:segue sender:sender];
+    CustomerInformationViewController *vc = segue.destinationViewController;
+    vc.transitioningDelegate = self;
+    vc.modalTransitionStyle = UIModalPresentationCustom;
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented
+                                                                  presentingController:(UIViewController *)presenting
+                                                                      sourceController:(UIViewController *)source {
+    
+    MILTransitionAnimator *animator = [MILTransitionAnimator new];
+    [animator setBounds:CGRectMake(630, 0, 400, 768)];
+    animator.presenting = YES;
+    return animator;
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    MILTransitionAnimator *animator = [MILTransitionAnimator new];
+    return animator;
+}
+
 
 @end

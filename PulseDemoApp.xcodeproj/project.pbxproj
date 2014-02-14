@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7210D11518ADE635007F4B2B /* MILTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7210D11418ADE635007F4B2B /* MILTransitionAnimator.m */; };
 		724AA7F218A53D5800560649 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AA7F118A53D5800560649 /* Foundation.framework */; };
 		724AA7F418A53D5800560649 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AA7F318A53D5800560649 /* CoreGraphics.framework */; };
 		724AA7F618A53D5800560649 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AA7F518A53D5800560649 /* UIKit.framework */; };
@@ -62,8 +63,6 @@
 		724AA89918AABA6000560649 /* wcl004_0419.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 724AA88918AABA6000560649 /* wcl004_0419.jpg */; };
 		724AA89A18AABA6000560649 /* wcl004_0420.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 724AA88A18AABA6000560649 /* wcl004_0420.jpg */; };
 		7280BCAC18AC75BB00648A1F /* CustomerInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280BCAB18AC75BB00648A1F /* CustomerInformationViewController.m */; };
-		7280BCAF18AC8F4E00648A1F /* MILTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280BCAE18AC8F4E00648A1F /* MILTransitionDelegate.m */; };
-		7280BCB218AC900F00648A1F /* MILTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280BCB118AC900F00648A1F /* MILTransitionController.m */; };
 		7280BCB918AD2EC500648A1F /* CustomerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280BCB818AD2EC500648A1F /* CustomerObject.m */; };
 		745428A418AAC59000E2398E /* MCRotatingCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 745428A318AAC59000E2398E /* MCRotatingCarousel.m */; };
 		745428A718AAC71900E2398E /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745428A618AAC71900E2398E /* ProductDetailViewController.m */; };
@@ -93,6 +92,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7210D11318ADE635007F4B2B /* MILTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MILTransitionAnimator.h; sourceTree = "<group>"; };
+		7210D11418ADE635007F4B2B /* MILTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MILTransitionAnimator.m; sourceTree = "<group>"; };
 		724AA7EE18A53D5800560649 /* Metropolitan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metropolitan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		724AA7F118A53D5800560649 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		724AA7F318A53D5800560649 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -161,10 +162,6 @@
 		724AA88A18AABA6000560649 /* wcl004_0420.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wcl004_0420.jpg; sourceTree = "<group>"; };
 		7280BCAA18AC75BB00648A1F /* CustomerInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerInformationViewController.h; sourceTree = "<group>"; };
 		7280BCAB18AC75BB00648A1F /* CustomerInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerInformationViewController.m; sourceTree = "<group>"; };
-		7280BCAD18AC8F4E00648A1F /* MILTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MILTransitionDelegate.h; sourceTree = "<group>"; };
-		7280BCAE18AC8F4E00648A1F /* MILTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MILTransitionDelegate.m; sourceTree = "<group>"; };
-		7280BCB018AC900F00648A1F /* MILTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MILTransitionController.h; path = ../MILTransitionController.h; sourceTree = "<group>"; };
-		7280BCB118AC900F00648A1F /* MILTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MILTransitionController.m; path = ../MILTransitionController.m; sourceTree = "<group>"; };
 		7280BCB718AD2EC500648A1F /* CustomerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerObject.h; sourceTree = "<group>"; };
 		7280BCB818AD2EC500648A1F /* CustomerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerObject.m; sourceTree = "<group>"; };
 		745428A218AAC59000E2398E /* MCRotatingCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCRotatingCarousel.h; sourceTree = "<group>"; };
@@ -352,10 +349,8 @@
 		7280BCB418AC940800648A1F /* Animations */ = {
 			isa = PBXGroup;
 			children = (
-				7280BCAD18AC8F4E00648A1F /* MILTransitionDelegate.h */,
-				7280BCAE18AC8F4E00648A1F /* MILTransitionDelegate.m */,
-				7280BCB018AC900F00648A1F /* MILTransitionController.h */,
-				7280BCB118AC900F00648A1F /* MILTransitionController.m */,
+				7210D11318ADE635007F4B2B /* MILTransitionAnimator.h */,
+				7210D11418ADE635007F4B2B /* MILTransitionAnimator.m */,
 			);
 			name = Animations;
 			sourceTree = "<group>";
@@ -554,16 +549,15 @@
 				745428A418AAC59000E2398E /* MCRotatingCarousel.m in Sources */,
 				724AA80218A53D5800560649 /* AppDelegate.m in Sources */,
 				7280BCB918AD2EC500648A1F /* CustomerObject.m in Sources */,
+				7210D11518ADE635007F4B2B /* MILTransitionAnimator.m in Sources */,
 				724AA85318A97D0100560649 /* DepartmentViewController.m in Sources */,
 				745428A718AAC71900E2398E /* ProductDetailViewController.m in Sources */,
 				724AA80818A53D5800560649 /* MasterViewController.m in Sources */,
 				724AA87718A984DE00560649 /* ProductCollectionViewCell.m in Sources */,
 				724AA83318A845FF00560649 /* InventoryItem.m in Sources */,
-				7280BCAF18AC8F4E00648A1F /* MILTransitionDelegate.m in Sources */,
 				724AA7FE18A53D5800560649 /* main.m in Sources */,
 				724AA80B18A53D5800560649 /* DetailViewController.m in Sources */,
 				7280BCAC18AC75BB00648A1F /* CustomerInformationViewController.m in Sources */,
-				7280BCB218AC900F00648A1F /* MILTransitionController.m in Sources */,
 				724AA83F18A8822C00560649 /* InventoryViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

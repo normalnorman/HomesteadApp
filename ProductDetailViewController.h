@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProductDetailViewController : UIViewController
+@interface ProductDetailViewController : UIViewController <UIViewControllerTransitioningDelegate>
 
 @end
