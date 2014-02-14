@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomerObject.h"
+#import "LocationItem.h"
+#import "DetailViewNavigationController.h"
 
-@interface ProductDetailViewController : UIViewController <UIViewControllerTransitioningDelegate>
-
+@interface ProductDetailViewController : UIViewController <UIViewControllerTransitioningDelegate, UIAlertViewDelegate>
+@property (strong)CustomerObject *customerObj;
+@property (strong)LocationItem *locationObj;
+@property (strong)DetailViewNavigationController *viewNav;
+-(void)invokeAlert;
 @end

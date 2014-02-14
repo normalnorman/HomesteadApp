@@ -10,15 +10,23 @@
 #import "MCRotatingCarousel.h"
 #import "CustomerInformationViewController.h"
 #import "MILTransitionAnimator.h"
+#import "CustomerObject.h"
+#import "DetailViewNavigationController.h"
 
 @interface ProductDetailViewController ()<MCRotatingCarouselDataSource, MCRotatingCarouselDelegate>{
     NSMutableArray *_images;
+    __weak IBOutlet UIButton *sizeButton2;
+    __weak IBOutlet UIButton *sizeButton4;
+    __weak IBOutlet UILabel *sizeLabel2;
+    __weak IBOutlet UILabel *sizeLabel4;
 }
 
 - (IBAction)dismiss:(id)sender;
 - (IBAction)showCustomerForm:(id)sender;
 - (IBAction)requestClicked:(id)sender;
-
+@property (strong)CustomerInformationViewController *customerInfoVC;
+@property (strong)UIColor *customGreenColor;
+@property (strong)UIColor *customPurpleColor;
 @end
 
 @implementation ProductDetailViewController{
@@ -29,6 +37,10 @@
 {
     //self.view.bounds = CGRectMake(150, 0, 768, 768);
     [super viewDidLoad];
+    
+    self.customGreenColor = [UIColor colorWithRed:0 green:216 blue:144 alpha:1];
+    self.customGreenColor = [UIColor colorWithRed:126 green:60 blue:245 alpha:1];
+    
     _images = [[NSMutableArray alloc] init];
     
     [_images addObject:@"angle1" ];
@@ -47,29 +59,23 @@
     [self.view addSubview:carousel];
     
     [carousel reloadData];
+    
+    if(self.customerObj)
+    {
+        [self showCustomerForm];
+        [self updateAvailability:YES];
+    }
 
 }
 
 #pragma mark - MCRotatingCarouselDataSource
 -(UIView *)rotatingCarousel:(MCRotatingCarousel *)carousel viewForItemAtIndex:(NSUInteger)index
 {
-    //Create your view here - it could be any kind of view, eg. a UIImageView.
-    //UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 150, 150)];
-    //view.backgroundColor = self.items[index];
-    
-    NSLog(@"Image was %@",_images[index]);
     UIView *imageView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 185, 250)];
     
-    //UIImageView *imageView = [[UIImageView alloc] initWithImage:];
-    //[imageView setImage:[UIImage imageNamed:@"Home"]];
     [imageView setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed:_images[index]]]];
     imageView.layer.borderColor = [[UIColor lightGrayColor] CGColor];
     imageView.layer.borderWidth = 1;
-    //imageView.frame = CGRectMake(0, 0, 150, 150);
-    //imageView.center = imageView.superview.center;
-    
-    /*self.view.backgroundColor = [UIColor lightGrayColor];
-    self.view.layer.borderWidth = 1;*/
     
     return imageView;
 }
@@ -114,30 +120,66 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (IBAction)showCustomerForm:(id)sender {
+- (void)showCustomerForm {
     CustomerInformationViewController *customerForm = [self.storyboard instantiateViewControllerWithIdentifier:@"CustomerForm"];
     customerForm.transitioningDelegate = self;
     customerForm.modalPresentationStyle = UIModalPresentationCustom;
     customerForm.view.frame = CGRectMake(368, 0, 400, 768);
     [self addChildViewController:customerForm];
     [self.view addSubview:customerForm.view];
-    /*[self presentViewController:customerForm animated:YES completion:^{
-        NSLog(@"Completed");
-    }];*/
+
+    [customerForm setCustomerData:self.customerObj];
     
 }
 
+
 - (IBAction)requestClicked:(id)sender {
-    [self showCustomerForm:sender];
+    [self showCustomerForm];
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     [super prepareForSegue:segue sender:sender];
-    CustomerInformationViewController *vc = segue.destinationViewController;
-    vc.transitioningDelegate = self;
-    vc.modalTransitionStyle = UIModalPresentationCustom;
+    /*self.customerInfoVC = segue.destinationViewController;
+    self.customerInfoVC.transitioningDelegate = self;
+    self.customerInfoVC.modalTransitionStyle = UIModalPresentationCustom;*/
 }
 
+-(void)invokeAlert
+{
+    if(self.customerObj)
+    {
+        UIViewController *vc = (UIViewController*)self;
+        [self.viewNav setCustomerObject:self.customerObj];
+        [self.viewNav fakePush];
+    }
+}
+
+-(void)updateAvailability:(BOOL)available
+{
+    UIImage *btnBackground;
+    UIColor *labelColor;
+
+    if(available)
+    {
+        btnBackground = [UIImage imageNamed:@"instock"];
+        labelColor = [UIColor whiteColor];
+    }else{
+        btnBackground = [UIImage imageNamed:@"outofstock"];
+        labelColor = [UIColor grayColor];
+    }
+    
+    [sizeButton2 setImage:btnBackground forState:UIControlStateNormal];
+    [sizeButton4 setImage:btnBackground forState:UIControlStateNormal];
+    [sizeLabel2 setTextColor:labelColor];
+    [sizeLabel4 setTextColor:labelColor];
+}
+
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+}
+
+#pragma mark UIAnimation code
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented
                                                                   presentingController:(UIViewController *)presenting
                                                                       sourceController:(UIViewController *)source {
@@ -152,6 +194,5 @@
     MILTransitionAnimator *animator = [MILTransitionAnimator new];
     return animator;
 }
-
 
 @end

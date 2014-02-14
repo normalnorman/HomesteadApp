@@ -11,5 +11,5 @@
 @interface DepartmentViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UIViewControllerTransitioningDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-
+-(void)showDetailViewForCustomer:(NSObject*)customer;
 @end

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface CustomerObject : NSObject
-@property (nonatomic, weak)NSString *name;
-@property (nonatomic, weak)NSString *email;
-@property (nonatomic, weak)NSString *phoneNumber;
+@property (strong)NSString *name;
+@property (strong)NSString *email;
+@property (strong)NSString *phoneNumber;
 @end

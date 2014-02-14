@@ -7,10 +7,10 @@
 //
 
 #import "CustomerInformationViewController.h"
+#import "ProductDetailViewController.h"
 #import "CustomerObject.h"
 
 @interface CustomerInformationViewController ()
-@property (nonatomic, strong)CustomerObject *customerObject;
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UITextField *phoneField;
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
@@ -38,7 +38,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.customerObject = [[CustomerObject alloc] init];
+    self.customerObj = [[CustomerObject alloc] init];
     [self setCallButtonEnabled:NO];
 }
 
@@ -53,8 +53,6 @@
 }
 
 - (IBAction)saveInfo:(id)sender {
-    //[self dismiss:sender];
-    /*UIButton *callButton = [[UIButton alloc] initWithFrame:CGRectMake(50, 400, 100, 50)];*/
     [self changedPhoneNumber:sender];
     [self changedName:sender];
     [self changedEmail:sender];
@@ -64,34 +62,26 @@
 
 - (IBAction)changedPhoneNumber:(id)sender {
     NSLog(@"Changed phone number");
-    self.customerObject.phoneNumber = self.phoneField.text;
+    self.customerObj.phoneNumber = self.phoneField.text;
     
     [self setCallButtonEnabled:YES];
 }
 
 - (IBAction)changedName:(id)sender {
-    self.customerObject.name = self.nameField.text;
+    self.customerObj.name = self.nameField.text;
 }
 
 - (IBAction)changedEmail:(id)sender {
     NSLog(@"Changed phone number");
-    self.customerObject.email = self.emailField.text;
+    self.customerObj.email = self.emailField.text;
 }
 
 - (IBAction)saveCustomer:(id)sender {
     [self saveInfo:sender];
-    
-    [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(showAlert:) userInfo:nil repeats:NO];
-}
-
-- (void)showAlert:(id)sender {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Signature Jeans (Evolution Cotton) Available"
-                                                    message:@"Would you like to notify Ana Blank?"
-                                                   delegate:self
-                                          cancelButtonTitle:@"Cancel"
-                                          otherButtonTitles:@"OK",
-                          nil];
-    [alert show];
+    ProductDetailViewController *parent = (ProductDetailViewController*)self.parentViewController;
+    parent.customerObj = self.customerObj;
+    [parent invokeAlert];
+    [self dismiss:sender];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -113,14 +103,6 @@
 -(void)setCallButtonEnabled:(BOOL)enabled
 {
     self.callButton.hidden = !enabled;
-    /*[self.callButton setHidden:enabled];
-
-    if(enabled)
-        [self.callButton setAlpha:1.0];
-    else
-        [self.callButton setAlpha:0];*/
-    //[self.callButton]
-    //[self.callButtonBackground setEnabled:enabled];
 }
 
 -(IBAction)callUser:(id)sender
@@ -135,12 +117,14 @@
     return NO;
 }
 
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+- (void)setCustomerData:(CustomerObject*)customerObj
 {
-    NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
-    
-    if([title isEqualToString:@"OK"])
+    if(customerObj)
     {
+        self.customerObj = customerObj;
+        self.nameField.text = customerObj.name;
+        self.emailField.text = customerObj.email;
+        self.phoneField.text = customerObj.phoneNumber;
         [self setCallButtonEnabled:YES];
     }
 }

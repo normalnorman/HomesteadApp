@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomerObject.h"
 
-@interface CustomerInformationViewController : UIViewController <UITextFieldDelegate, UITextViewDelegate, UIAlertViewDelegate>
+@interface CustomerInformationViewController : UIViewController <UITextFieldDelegate, UITextViewDelegate>
+@property (strong)CustomerObject *customerObj;
+-(void)setCustomerData:(CustomerObject*)customerObj;
 @end

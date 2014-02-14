@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7210D11518ADE635007F4B2B /* MILTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7210D11418ADE635007F4B2B /* MILTransitionAnimator.m */; };
+		7210D11818AE7002007F4B2B /* AvailabilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7210D11718AE7002007F4B2B /* AvailabilityViewController.m */; };
+		7210D11B18AE717B007F4B2B /* LocationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7210D11A18AE717B007F4B2B /* LocationItem.m */; };
+		7210D11E18AE745E007F4B2B /* LocationViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7210D11D18AE745E007F4B2B /* LocationViewCell.m */; };
+		7210D12118AE8DA0007F4B2B /* DetailViewNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7210D12018AE8DA0007F4B2B /* DetailViewNavigationController.m */; };
 		724AA7F218A53D5800560649 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AA7F118A53D5800560649 /* Foundation.framework */; };
 		724AA7F418A53D5800560649 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AA7F318A53D5800560649 /* CoreGraphics.framework */; };
 		724AA7F618A53D5800560649 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AA7F518A53D5800560649 /* UIKit.framework */; };
@@ -94,6 +98,14 @@
 /* Begin PBXFileReference section */
 		7210D11318ADE635007F4B2B /* MILTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MILTransitionAnimator.h; sourceTree = "<group>"; };
 		7210D11418ADE635007F4B2B /* MILTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MILTransitionAnimator.m; sourceTree = "<group>"; };
+		7210D11618AE7002007F4B2B /* AvailabilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailabilityViewController.h; sourceTree = "<group>"; };
+		7210D11718AE7002007F4B2B /* AvailabilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailabilityViewController.m; sourceTree = "<group>"; };
+		7210D11918AE717B007F4B2B /* LocationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationItem.h; sourceTree = "<group>"; };
+		7210D11A18AE717B007F4B2B /* LocationItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationItem.m; sourceTree = "<group>"; };
+		7210D11C18AE745E007F4B2B /* LocationViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewCell.h; sourceTree = "<group>"; };
+		7210D11D18AE745E007F4B2B /* LocationViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewCell.m; sourceTree = "<group>"; };
+		7210D11F18AE8DA0007F4B2B /* DetailViewNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewNavigationController.h; sourceTree = "<group>"; };
+		7210D12018AE8DA0007F4B2B /* DetailViewNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewNavigationController.m; sourceTree = "<group>"; };
 		724AA7EE18A53D5800560649 /* Metropolitan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metropolitan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		724AA7F118A53D5800560649 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		724AA7F318A53D5800560649 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -251,6 +263,8 @@
 				724AA80718A53D5800560649 /* MasterViewController.m */,
 				724AA80918A53D5800560649 /* DetailViewController.h */,
 				724AA80A18A53D5800560649 /* DetailViewController.m */,
+				7210D11F18AE8DA0007F4B2B /* DetailViewNavigationController.h */,
+				7210D12018AE8DA0007F4B2B /* DetailViewNavigationController.m */,
 				724AA87818AA8ED900560649 /* MainSplitViewController.h */,
 				724AA87918AA8ED900560649 /* MainSplitViewController.m */,
 				724AA85118A97D0100560649 /* DepartmentViewController.h */,
@@ -259,6 +273,8 @@
 				745428A618AAC71900E2398E /* ProductDetailViewController.m */,
 				7280BCAA18AC75BB00648A1F /* CustomerInformationViewController.h */,
 				7280BCAB18AC75BB00648A1F /* CustomerInformationViewController.m */,
+				7210D11618AE7002007F4B2B /* AvailabilityViewController.h */,
+				7210D11718AE7002007F4B2B /* AvailabilityViewController.m */,
 				724AA80C18A53D5800560649 /* Images.xcassets */,
 				724AA80318A53D5800560649 /* Main.storyboard */,
 				724AA7F818A53D5800560649 /* Supporting Files */,
@@ -364,6 +380,8 @@
 				724AA82F18A8454B00560649 /* NavigationObject.m */,
 				7280BCB718AD2EC500648A1F /* CustomerObject.h */,
 				7280BCB818AD2EC500648A1F /* CustomerObject.m */,
+				7210D11918AE717B007F4B2B /* LocationItem.h */,
+				7210D11A18AE717B007F4B2B /* LocationItem.m */,
 			);
 			name = "Data Objects";
 			sourceTree = "<group>";
@@ -377,6 +395,8 @@
 				724AA87618A984DE00560649 /* ProductCollectionViewCell.m */,
 				745428A218AAC59000E2398E /* MCRotatingCarousel.h */,
 				745428A318AAC59000E2398E /* MCRotatingCarousel.m */,
+				7210D11C18AE745E007F4B2B /* LocationViewCell.h */,
+				7210D11D18AE745E007F4B2B /* LocationViewCell.m */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -545,14 +565,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				724AA87A18AA8ED900560649 /* MainSplitViewController.m in Sources */,
+				7210D11818AE7002007F4B2B /* AvailabilityViewController.m in Sources */,
 				724AA83018A8454B00560649 /* NavigationObject.m in Sources */,
 				745428A418AAC59000E2398E /* MCRotatingCarousel.m in Sources */,
 				724AA80218A53D5800560649 /* AppDelegate.m in Sources */,
 				7280BCB918AD2EC500648A1F /* CustomerObject.m in Sources */,
+				7210D12118AE8DA0007F4B2B /* DetailViewNavigationController.m in Sources */,
 				7210D11518ADE635007F4B2B /* MILTransitionAnimator.m in Sources */,
 				724AA85318A97D0100560649 /* DepartmentViewController.m in Sources */,
 				745428A718AAC71900E2398E /* ProductDetailViewController.m in Sources */,
+				7210D11E18AE745E007F4B2B /* LocationViewCell.m in Sources */,
 				724AA80818A53D5800560649 /* MasterViewController.m in Sources */,
+				7210D11B18AE717B007F4B2B /* LocationItem.m in Sources */,
 				724AA87718A984DE00560649 /* ProductCollectionViewCell.m in Sources */,
 				724AA83318A845FF00560649 /* InventoryItem.m in Sources */,
 				724AA7FE18A53D5800560649 /* main.m in Sources */,

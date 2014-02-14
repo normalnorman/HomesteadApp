@@ -45,7 +45,7 @@
         
         endFrame.origin.x += 320;
         
-        [UIView animateWithDuration:0.1f animations:^{
+        [UIView animateWithDuration:0.0f animations:^{
             toViewController.view.tintAdjustmentMode = UIViewTintAdjustmentModeAutomatic;
             fromViewController.view.frame = endFrame;
         } completion:^(BOOL finished) {
