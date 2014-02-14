@@ -49,7 +49,8 @@
 }
 
 - (IBAction)dismiss:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    ProductDetailViewController *parent = (ProductDetailViewController*)self.parentViewController;
+    [self.view removeFromSuperview];
 }
 
 - (IBAction)saveInfo:(id)sender {
@@ -81,7 +82,9 @@
     ProductDetailViewController *parent = (ProductDetailViewController*)self.parentViewController;
     parent.customerObj = self.customerObj;
     [parent invokeAlert];
-    [self dismiss:sender];
+    
+    //close popup and detail dialog
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

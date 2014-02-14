@@ -120,15 +120,20 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)showCustomerForm {
-    CustomerInformationViewController *customerForm = [self.storyboard instantiateViewControllerWithIdentifier:@"CustomerForm"];
-    customerForm.transitioningDelegate = self;
-    customerForm.modalPresentationStyle = UIModalPresentationCustom;
-    customerForm.view.frame = CGRectMake(368, 0, 400, 768);
-    [self addChildViewController:customerForm];
-    [self.view addSubview:customerForm.view];
+- (void)showCustomerForm
+{
+    self.customerForm = [self.storyboard instantiateViewControllerWithIdentifier:@"CustomerForm"];
+    self.customerForm.transitioningDelegate = self;
+    self.customerForm.modalPresentationStyle = UIModalPresentationCustom;
+    self.customerForm.view.frame = CGRectMake(368, 0, 400, 768);
+    [self addChildViewController:self.customerForm];
+    [self.view addSubview:self.customerForm.view];
 
-    [customerForm setCustomerData:self.customerObj];
+    [self.customerForm setCustomerData:self.customerObj];
+}
+
+- (void)hideCustomerForm
+{
     
 }
 
