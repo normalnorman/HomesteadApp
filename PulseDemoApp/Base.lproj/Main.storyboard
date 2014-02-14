@@ -995,7 +995,7 @@
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="jMJ-g0-cmh" kind="popover" popoverAnchorView="2fz-jC-OGp" id="xto-dx-FI2">
+                                                    <segue destination="jMJ-g0-cmh" kind="popover" identifier="size2Segue" popoverAnchorView="2fz-jC-OGp" id="xto-dx-FI2">
                                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES"/>
                                                     </segue>
                                                 </connections>

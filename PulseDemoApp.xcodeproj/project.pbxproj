@@ -12,6 +12,7 @@
 		7210D11B18AE717B007F4B2B /* LocationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7210D11A18AE717B007F4B2B /* LocationItem.m */; };
 		7210D11E18AE745E007F4B2B /* LocationViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7210D11D18AE745E007F4B2B /* LocationViewCell.m */; };
 		7210D12118AE8DA0007F4B2B /* DetailViewNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7210D12018AE8DA0007F4B2B /* DetailViewNavigationController.m */; };
+		7232ED4E18AEC7D100CE2C6A /* MapPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7232ED4D18AEC7D100CE2C6A /* MapPopoverController.m */; };
 		724AA7F218A53D5800560649 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AA7F118A53D5800560649 /* Foundation.framework */; };
 		724AA7F418A53D5800560649 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AA7F318A53D5800560649 /* CoreGraphics.framework */; };
 		724AA7F618A53D5800560649 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 724AA7F518A53D5800560649 /* UIKit.framework */; };
@@ -106,6 +107,8 @@
 		7210D11D18AE745E007F4B2B /* LocationViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewCell.m; sourceTree = "<group>"; };
 		7210D11F18AE8DA0007F4B2B /* DetailViewNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewNavigationController.h; sourceTree = "<group>"; };
 		7210D12018AE8DA0007F4B2B /* DetailViewNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewNavigationController.m; sourceTree = "<group>"; };
+		7232ED4C18AEC7D100CE2C6A /* MapPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPopoverController.h; sourceTree = "<group>"; };
+		7232ED4D18AEC7D100CE2C6A /* MapPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPopoverController.m; sourceTree = "<group>"; };
 		724AA7EE18A53D5800560649 /* Metropolitan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metropolitan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		724AA7F118A53D5800560649 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		724AA7F318A53D5800560649 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -397,6 +400,8 @@
 				745428A318AAC59000E2398E /* MCRotatingCarousel.m */,
 				7210D11C18AE745E007F4B2B /* LocationViewCell.h */,
 				7210D11D18AE745E007F4B2B /* LocationViewCell.m */,
+				7232ED4C18AEC7D100CE2C6A /* MapPopoverController.h */,
+				7232ED4D18AEC7D100CE2C6A /* MapPopoverController.m */,
 			);
 			name = Components;
 			sourceTree = "<group>";
@@ -582,6 +587,7 @@
 				724AA7FE18A53D5800560649 /* main.m in Sources */,
 				724AA80B18A53D5800560649 /* DetailViewController.m in Sources */,
 				7280BCAC18AC75BB00648A1F /* CustomerInformationViewController.m in Sources */,
+				7232ED4E18AEC7D100CE2C6A /* MapPopoverController.m in Sources */,
 				724AA83F18A8822C00560649 /* InventoryViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

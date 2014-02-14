@@ -9,6 +9,7 @@
 #import "AvailabilityViewController.h"
 #import "LocationViewCell.h"
 #import "LocationItem.h"
+#import "DetailViewNavigationController.h"
 
 @interface AvailabilityViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *availability;
