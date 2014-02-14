@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "724AA7ED18A53D5800560649"
-               BuildableName = "PulseDemoApp.app"
+               BuildableName = "Metropolitan.app"
                BlueprintName = "PulseDemoApp"
                ReferencedContainer = "container:PulseDemoApp.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "724AA7ED18A53D5800560649"
-            BuildableName = "PulseDemoApp.app"
+            BuildableName = "Metropolitan.app"
             BlueprintName = "PulseDemoApp"
             ReferencedContainer = "container:PulseDemoApp.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "724AA7ED18A53D5800560649"
-            BuildableName = "PulseDemoApp.app"
+            BuildableName = "Metropolitan.app"
             BlueprintName = "PulseDemoApp"
             ReferencedContainer = "container:PulseDemoApp.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "724AA7ED18A53D5800560649"
-            BuildableName = "PulseDemoApp.app"
+            BuildableName = "Metropolitan.app"
             BlueprintName = "PulseDemoApp"
             ReferencedContainer = "container:PulseDemoApp.xcodeproj">
          </BuildableReference>
