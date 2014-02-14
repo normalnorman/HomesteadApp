@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface LocationItem : NSObject
-@property (nonatomic, weak)NSString *mapLabel;
-@property (nonatomic, weak)NSString *name;
-@property (nonatomic, weak)NSString *distance;
-@property (nonatomic, weak)NSString *availability;
+@property (strong)NSString *mapLabel;
+@property (strong)NSString *name;
+@property (strong)NSString *distance;
+@property (strong)NSString *availability;
 @end
