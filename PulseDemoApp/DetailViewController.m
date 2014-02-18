@@ -58,7 +58,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
     
-    self.categoryImages = @[@"wcl004_0402.jpg", @"wcl004_0405.jpg", @"wcl004_0406.jpg", @"wcl004_0407.jpg", @"wcl004_0408.jpg", @"wcl004_0410.jpg",@"wcl004_0412.jpg"];
+    self.categoryImages = @[@"product1.jpg", @"product2.jpg", @"product3.jpg", @"product4.jpg", @"product5.jpg", @"product6.jpg",@"product7.jpg"];
     
     [self.navItem1 addGestureRecognizer:self.gestureRecognizer];
 }

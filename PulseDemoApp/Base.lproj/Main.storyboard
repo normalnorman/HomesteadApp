@@ -992,28 +992,28 @@
                                                 <color key="textColor" red="0.32549020649999999" green="0.32549020649999999" blue="0.32549020649999999" alpha="1" colorSpace="deviceRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="wcl004_0420.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UES-M7-8Rr">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="BootsImages_29.png" translatesAutoresizingMaskIntoConstraints="NO" id="UES-M7-8Rr">
                                                 <rect key="frame" x="399" y="437" width="374" height="685"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="155" id="GxY-yC-en4"/>
-                                                    <constraint firstAttribute="height" constant="167" id="NJB-ST-MNx"/>
+                                                    <constraint firstAttribute="height" constant="250" id="NJB-ST-MNx"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="wcl004_0401.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3gW-tp-yvN">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="BootsImages_26.png" translatesAutoresizingMaskIntoConstraints="NO" id="3gW-tp-yvN">
                                                 <rect key="frame" x="227" y="437" width="374" height="685"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="155" id="JEa-4f-eXd"/>
-                                                    <constraint firstAttribute="height" constant="167" id="dTm-de-Avi"/>
+                                                    <constraint firstAttribute="height" constant="250" id="dTm-de-Avi"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="315" id="e30-qC-Nce"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="wcl004_0402.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="eWA-du-G9G">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="BootsImages_22.png" translatesAutoresizingMaskIntoConstraints="NO" id="eWA-du-G9G">
                                                 <rect key="frame" x="55" y="437" width="374" height="685"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="167" id="1vq-ja-N5v"/>
+                                                    <constraint firstAttribute="height" constant="250" id="1vq-ja-N5v"/>
                                                     <constraint firstAttribute="width" constant="155" id="lm5-H1-upo"/>
                                                 </constraints>
                                             </imageView>
@@ -1209,7 +1209,8 @@
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTg-t7-3ba">
                                                 <rect key="frame" x="165" y="253" width="551" height="24"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">Combining excellent downhill performance with a ski/hike lever to make</string>
+                                                <string key="text">Combining excellent downhill performance with a ski/hike lever to make
+</string>
                                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
                                                 <color key="textColor" red="0.32549020649999999" green="0.32549020649999999" blue="0.32549020649999999" alpha="1" colorSpace="deviceRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1217,7 +1218,8 @@
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HP3-ra-nlT">
                                                 <rect key="frame" x="56" y="276" width="633" height="24"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <string key="text">climbing easy, these boots are stiff but roomy for skiing the sidecountry in comfort.</string>
+                                                <string key="text">climbing easy, these boots are stiff but roomy for skiing the sidecountry in comfort.
+</string>
                                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="17"/>
                                                 <color key="textColor" red="0.32549020649999999" green="0.32549020649999999" blue="0.32549020649999999" alpha="1" colorSpace="deviceRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -1469,13 +1471,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BootsImages_22.png" width="281" height="390"/>
+        <image name="BootsImages_26.png" width="279" height="390"/>
+        <image name="BootsImages_29.png" width="279" height="390"/>
         <image name="accessories" width="160" height="160"/>
         <image name="add_button" width="25" height="25"/>
         <image name="banner" width="2048" height="750"/>
         <image name="button" width="287" height="87"/>
         <image name="carrot.png" width="14" height="9"/>
         <image name="instock" width="40" height="40"/>
-        <image name="inventory_bg.png" width="2048" height="1479"/>
+        <image name="inventory_bg.png" width="2048" height="1536"/>
         <image name="jeans0" width="277" height="387"/>
         <image name="map" width="641" height="641"/>
         <image name="nav_item1" width="228" height="228"/>
@@ -1490,9 +1495,6 @@
         <image name="subnav.png" width="2048" height="90"/>
         <image name="thick_divider" width="447" height="1"/>
         <image name="thin_divider" width="392" height="1"/>
-        <image name="wcl004_0401.jpg" width="330" height="330"/>
-        <image name="wcl004_0402.jpg" width="330" height="330"/>
-        <image name="wcl004_0420.jpg" width="330" height="330"/>
     </resources>
     <color key="tintColor" red="0.32549020649999999" green="0.32549020649999999" blue="0.32549020649999999" alpha="1" colorSpace="deviceRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
