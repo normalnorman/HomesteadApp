@@ -3,37 +3,37 @@
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "demoapp_icon_29-1.png",
+      "filename" : "homestead_icon29.png",
       "scale" : "1x"
     },
     {
       "size" : "29x29",
       "idiom" : "ipad",
-      "filename" : "demoapp_icon_29.png",
+      "filename" : "homestead_icon58.png",
       "scale" : "2x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "demoapp_icon_40-1.png",
+      "filename" : "homestead_icon40.png",
       "scale" : "1x"
     },
     {
       "size" : "40x40",
       "idiom" : "ipad",
-      "filename" : "demoapp_icon_40.png",
+      "filename" : "homestead_icon80.png",
       "scale" : "2x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "demoapp_icon-1.png",
+      "filename" : "homestead_icon76.png",
       "scale" : "1x"
     },
     {
       "size" : "76x76",
       "idiom" : "ipad",
-      "filename" : "demoapp_icon.png",
+      "filename" : "homestead_icon.png",
       "scale" : "2x"
     }
   ],

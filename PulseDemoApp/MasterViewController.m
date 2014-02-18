@@ -45,7 +45,7 @@
     [_objects addObject:navItem];
     
     navItem = [[NavigationObject alloc] init];
-    navItem.name = @"Style Guide";
+    navItem.name = @"Gear Shop";
     navItem.icon = @"Customers";
     navItem.action = 2;
     

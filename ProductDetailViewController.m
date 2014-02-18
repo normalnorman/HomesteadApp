@@ -153,7 +153,6 @@
 {
     if(self.customerObj)
     {
-        UIViewController *vc = (UIViewController*)self;
         [self.viewNav setCustomerObject:self.customerObj];
         [self.viewNav fakePush];
     }
@@ -179,6 +178,11 @@
     [sizeLabel4 setTextColor:labelColor];
 }
 
+-(void)showCustomerForm:(id)sender
+{
+    
+}
+
 -(void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
@@ -192,12 +196,12 @@
     MILTransitionAnimator *animator = [MILTransitionAnimator new];
     [animator setBounds:CGRectMake(630, 0, 400, 768)];
     animator.presenting = YES;
-    return animator;
+    return (id)animator;
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
     MILTransitionAnimator *animator = [MILTransitionAnimator new];
-    return animator;
+    return (id)animator;
 }
 
 @end

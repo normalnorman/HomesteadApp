@@ -12,4 +12,5 @@
 @property (strong)NSString *name;
 @property (strong)NSString *email;
 @property (strong)NSString *phoneNumber;
+@property (strong)NSString *address;
 @end

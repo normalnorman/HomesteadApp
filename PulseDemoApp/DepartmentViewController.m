@@ -313,12 +313,12 @@
     MILTransitionAnimator *animator = [MILTransitionAnimator new];
     [animator setBounds:CGRectMake(260, 0, 768, 768)];
     animator.presenting = YES;
-    return animator;
+    return (id)animator;
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
     MILTransitionAnimator *animator = [MILTransitionAnimator new];
-    return animator;
+    return (id)animator;
 }
 
 -(void)showDetailViewForCustomer:(NSObject *)customer

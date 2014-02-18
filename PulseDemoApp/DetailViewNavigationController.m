@@ -58,6 +58,7 @@
     self.customerObj.name = [NSString stringWithString:customerObj.name];
     self.customerObj.email = [NSString stringWithString:customerObj.email];
     self.customerObj.phoneNumber  = [NSString stringWithString:customerObj.phoneNumber];
+    self.customerObj.address  = [NSString stringWithString:customerObj.address];
 }
 
 
@@ -67,8 +68,8 @@
 }
 
 - (void)showAlert:(id)sender {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Signature Jeans (Evolution Cotton) Available"
-                                                    message:[NSString stringWithFormat:@"Would you like to notify %@?", self.customerObj.name]
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Artic Alltrack Ski Boots have shipped"
+                                                    message:[NSString stringWithFormat:@"%@ has received the Ski Boots ordered in store.  Do you want to follow up?", self.customerObj.name]
                                                    delegate:self
                                           cancelButtonTitle:@"Cancel"
                                           otherButtonTitles:@"OK",

@@ -3,11 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "sale1.png"
+      "filename" : "Promotion_Ski2.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "Promotion_Ski2-1.png"
     }
   ],
   "info" : {

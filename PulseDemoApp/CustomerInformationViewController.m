@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *phoneField;
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
 @property (weak, nonatomic) IBOutlet UIButton *callButton;
+@property (weak, nonatomic) IBOutlet UITextField *addressField;
 @property (weak, nonatomic) IBOutlet UIButton *callButtonBackground;
 - (IBAction)dismiss:(id)sender;
 - (IBAction)saveInfo:(id)sender;
@@ -49,7 +50,6 @@
 }
 
 - (IBAction)dismiss:(id)sender {
-    ProductDetailViewController *parent = (ProductDetailViewController*)self.parentViewController;
     [self.view removeFromSuperview];
 }
 
@@ -57,12 +57,12 @@
     [self changedPhoneNumber:sender];
     [self changedName:sender];
     [self changedEmail:sender];
+    [self changedAddress:sender];
     
     [self hideKeyboard];
 }
 
 - (IBAction)changedPhoneNumber:(id)sender {
-    NSLog(@"Changed phone number");
     self.customerObj.phoneNumber = self.phoneField.text;
     
     [self setCallButtonEnabled:YES];
@@ -73,8 +73,11 @@
 }
 
 - (IBAction)changedEmail:(id)sender {
-    NSLog(@"Changed phone number");
     self.customerObj.email = self.emailField.text;
+}
+
+- (IBAction)changedAddress:(id)sender {
+    self.customerObj.address = self.addressField.text;
 }
 
 - (IBAction)saveCustomer:(id)sender {
@@ -128,6 +131,7 @@
         self.nameField.text = customerObj.name;
         self.emailField.text = customerObj.email;
         self.phoneField.text = customerObj.phoneNumber;
+        self.addressField.text = customerObj.address;
         [self setCallButtonEnabled:YES];
     }
 }

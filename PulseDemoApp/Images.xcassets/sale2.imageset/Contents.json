@@ -3,11 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "sale2.png"
+      "filename" : "Promo_Coats.png"
     },
     {
       "idiom" : "universal",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "Promo_Coats-1.png"
     }
   ],
   "info" : {
