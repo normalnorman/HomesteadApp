@@ -21,9 +21,13 @@
 
 @implementation AvailabilityViewController
 
+-(id)init
+{
+    return [super init];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
@@ -38,12 +42,21 @@
     [self setIsInStock:self.availabilityLabel];
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+
+}
+
 - (void)setIsInStock:(NSString*)available
 {
+    self.customGreenColor = [UIColor colorWithRed:0 green:210/255 blue:146/255 alpha:1];
+    self.customPurpleColor = [UIColor colorWithRed:127/255 green:47/255 blue:249/255 alpha:1];
     self.locationData = [[NSMutableArray alloc] init];
+    self.availability.text = available;
     
     if ([available isEqualToString:@"In Stock"])
     {
+        self.availability.textColor = self.customGreenColor;
         LocationItem *location = [[LocationItem alloc] init];
         location.mapLabel = @"A.";
         location.name = @"N I-35, Austin";
@@ -84,6 +97,7 @@
         
         [self.locationData addObject:location];
     }else{
+        //self.availability.textColor = self.customPurpleColor;
         LocationItem *location = [[LocationItem alloc] init];
         location.mapLabel = @"A.";
         location.name = @"N I-35, Austin";
@@ -140,6 +154,8 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    self.customGreenColor = [UIColor colorWithRed:0 green:210/255 blue:146/255 alpha:1];
+    self.customPurpleColor = [UIColor colorWithRed:127/255 green:47/255 blue:249/255 alpha:1];
     LocationViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"LocationListCell" forIndexPath:indexPath];
     LocationItem *item = [self.locationData objectAtIndex:indexPath.row];
     
@@ -147,9 +163,9 @@
     cell.label.text = item.name;
     cell.distance.text = item.distance;
     cell.availability.text = item.availability;
-    if([item.availability isEqualToString:@"Available"])
+    if([item.availability isEqualToString:@"In Stock"])
     {
-        [cell.availability setTextColor:[UIColor colorWithRed:0.0 green:211.0 blue:144.0 alpha:1]];
+        [cell.availability setTextColor:self.customGreenColor];
     }
     
     return cell;

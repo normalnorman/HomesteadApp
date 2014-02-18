@@ -37,13 +37,14 @@
     /*self.productImages = @[@"store_photos/wsh005_0501.jpg", @"store_photos/wsh005_0502.jpg", @"store_photos/wsh005_0503.jpg", @"store_photos/wsh005_0509.jpg", @"store_photos/wsh005_0510.jpg", @"store_photos/wsh005_0512.jpg", @"store_photos/wsh005_0507.jpg", @"store_photos/wsh005_0508.jpg" ];*/
     
     InventoryItem *item = [[InventoryItem alloc] init];
-    item.name = @"Performance Ski Boots";
-    item.description = @"Performance Ski Boots";
-    item.inStock = @"Out of Stock!";
+    
+    item.name = @"Arctic Alltrack Ski Boots";
+    item.description = @"Arctic Alltrack Ski Boots";
+    item.inStock = @"Only 2 left!";
     item.category = @"Boots";
     item.sizes = @[@"23", @"24", @"25", @"26"];
-    item.img = @"BootsImages_11.png";
-    item.price = @"$549.95";
+    item.img = @"BootsImages_14.png";
+    item.price = @"$452.75";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
@@ -67,13 +68,13 @@
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];
-    item.name = @"Arctic Alltrack Ski Boots";
-    item.description = @"Arctic Alltrack Ski Boots";
-    item.inStock = @"Only 2 left!";
+    item.name = @"Performance Ski Boots";
+    item.description = @"Performance Ski Boots";
+    item.inStock = @"Out of Stock!";
     item.category = @"Boots";
     item.sizes = @[@"23", @"24", @"25", @"26"];
-    item.img = @"BootsImages_14.png";
-    item.price = @"$452.75";
+    item.img = @"BootsImages_11.png";
+    item.price = @"$549.95";
     [self.productImages addObject:item];
     
     item = [[InventoryItem alloc] init];

@@ -12,6 +12,7 @@
 #import "MILTransitionAnimator.h"
 #import "CustomerObject.h"
 #import "DetailViewNavigationController.h"
+#import "AvailabilityViewController.h"
 
 @interface ProductDetailViewController ()<MCRotatingCarouselDataSource, MCRotatingCarouselDelegate>{
     NSMutableArray *_images;
@@ -24,6 +25,10 @@
 - (IBAction)dismiss:(id)sender;
 - (IBAction)showCustomerForm:(id)sender;
 - (IBAction)requestClicked:(id)sender;
+- (IBAction)size2Tapped:(id)sender;
+- (IBAction)size1Tapped:(id)sender;
+- (IBAction)size3Tapped:(id)sender;
+- (IBAction)size4Tapped:(id)sender;
 @property (strong)CustomerInformationViewController *customerInfoVC;
 @property (strong)UIColor *customGreenColor;
 @property (strong)UIColor *customPurpleColor;
@@ -39,7 +44,7 @@
     [super viewDidLoad];
     
     self.customGreenColor = [UIColor colorWithRed:0 green:216 blue:144 alpha:1];
-    self.customGreenColor = [UIColor colorWithRed:126 green:60 blue:245 alpha:1];
+    self.customPurpleColor = [UIColor colorWithRed:126 green:60 blue:245 alpha:1];
     
     _images = [[NSMutableArray alloc] init];
     
@@ -137,16 +142,8 @@
     
 }
 
-
 - (IBAction)requestClicked:(id)sender {
     [self showCustomerForm];
-}
-
-- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    [super prepareForSegue:segue sender:sender];
-    /*self.customerInfoVC = segue.destinationViewController;
-    self.customerInfoVC.transitioningDelegate = self;
-    self.customerInfoVC.modalTransitionStyle = UIModalPresentationCustom;*/
 }
 
 -(void)invokeAlert
@@ -202,6 +199,41 @@
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
     MILTransitionAnimator *animator = [MILTransitionAnimator new];
     return (id)animator;
+}
+
+- (IBAction)size2Tapped:(id)sender {
+    [self showOutOfStock:sender];
+}
+
+- (IBAction)size1Tapped:(id)sender {
+    [self showOutOfStock:sender];
+}
+
+- (IBAction)size3Tapped:(id)sender {
+    [self showOutOfStock:sender];
+}
+
+- (IBAction)size4Tapped:(id)sender {
+    [self showOutOfStock:sender];
+}
+
+-(void)showOutOfStock:(id)sender
+{
+    if(self.customerObj)
+        [self performSegueWithIdentifier: @"ShowAvailableItemSegue" sender: self];
+    else
+        [self performSegueWithIdentifier: @"ShowUnavailableItemSegue" sender: self];
+
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSLog(@"Segue called: %@", segue.identifier);
+   
+    AvailabilityViewController *avc = (AvailabilityViewController*)segue.destinationViewController;
+    if ([segue.identifier isEqualToString:@"ShowAvailableItemSegue"]) {
+        avc.availabilityLabel = @"In Stock";
+    }else
+        avc.availabilityLabel = @"Out of Stock";
 }
 
 @end
