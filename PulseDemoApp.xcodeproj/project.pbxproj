@@ -14,6 +14,8 @@
 		72095ED818B3CDA00034A5D9 /* product5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72095ED118B3CDA00034A5D9 /* product5.jpg */; };
 		72095ED918B3CDA00034A5D9 /* product6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72095ED218B3CDA00034A5D9 /* product6.jpg */; };
 		72095EDA18B3CDA00034A5D9 /* product7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72095ED318B3CDA00034A5D9 /* product7.jpg */; };
+		72095EDD18B3D44C0034A5D9 /* subnav.png in Resources */ = {isa = PBXBuildFile; fileRef = 72095EDC18B3D44C0034A5D9 /* subnav.png */; };
+		72095EDF18B3D4650034A5D9 /* carrot.png in Resources */ = {isa = PBXBuildFile; fileRef = 72095EDE18B3D4650034A5D9 /* carrot.png */; };
 		7210D11518ADE635007F4B2B /* MILTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7210D11418ADE635007F4B2B /* MILTransitionAnimator.m */; };
 		7210D11818AE7002007F4B2B /* AvailabilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7210D11718AE7002007F4B2B /* AvailabilityViewController.m */; };
 		7210D11B18AE717B007F4B2B /* LocationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7210D11A18AE717B007F4B2B /* LocationItem.m */; };
@@ -77,6 +79,8 @@
 		72095ED118B3CDA00034A5D9 /* product5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product5.jpg; sourceTree = "<group>"; };
 		72095ED218B3CDA00034A5D9 /* product6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product6.jpg; sourceTree = "<group>"; };
 		72095ED318B3CDA00034A5D9 /* product7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product7.jpg; sourceTree = "<group>"; };
+		72095EDC18B3D44C0034A5D9 /* subnav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = subnav.png; sourceTree = "<group>"; };
+		72095EDE18B3D4650034A5D9 /* carrot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carrot.png; sourceTree = "<group>"; };
 		7210D11318ADE635007F4B2B /* MILTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MILTransitionAnimator.h; sourceTree = "<group>"; };
 		7210D11418ADE635007F4B2B /* MILTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MILTransitionAnimator.m; sourceTree = "<group>"; };
 		7210D11618AE7002007F4B2B /* AvailabilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailabilityViewController.h; sourceTree = "<group>"; };
@@ -185,6 +189,15 @@
 			path = "Product Images";
 			sourceTree = "<group>";
 		};
+		72095EDB18B3D4370034A5D9 /* App Images */ = {
+			isa = PBXGroup;
+			children = (
+				72095EDE18B3D4650034A5D9 /* carrot.png */,
+				72095EDC18B3D44C0034A5D9 /* subnav.png */,
+			);
+			name = "App Images";
+			sourceTree = "<group>";
+		};
 		724AA7E518A53D5800560649 = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +231,7 @@
 		724AA7F718A53D5800560649 /* PulseDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				72095EDB18B3D4370034A5D9 /* App Images */,
 				72095ECC18B3CDA00034A5D9 /* Product Images */,
 				742A07D618B3BE660055323B /* inventoryBoots */,
 				7280BCB618AC944F00648A1F /* Components */,
@@ -436,12 +450,14 @@
 				742A07E518B3BE660055323B /* BootsImages_14.png in Resources */,
 				742A07E118B3BE660055323B /* BootsImages_03.png in Resources */,
 				742A07E218B3BE660055323B /* BootsImages_06.png in Resources */,
+				72095EDF18B3D4650034A5D9 /* carrot.png in Resources */,
 				742A07E718B3BE660055323B /* BootsImages_22.png in Resources */,
 				72095EDA18B3CDA00034A5D9 /* product7.jpg in Resources */,
 				724AA7FC18A53D5800560649 /* InfoPlist.strings in Resources */,
 				72095ED918B3CDA00034A5D9 /* product6.jpg in Resources */,
 				742A07E318B3BE660055323B /* BootsImages_08.png in Resources */,
 				742A07E418B3BE660055323B /* BootsImages_11.png in Resources */,
+				72095EDD18B3D44C0034A5D9 /* subnav.png in Resources */,
 				724AA82C18A80E5500560649 /* hamburger_icon.png in Resources */,
 				72095ED518B3CDA00034A5D9 /* product2.jpg in Resources */,
 				72095ED618B3CDA00034A5D9 /* product3.jpg in Resources */,
