@@ -41,7 +41,7 @@
     item.description = @"Performance Ski Boots";
     item.inStock = @"Out of Stock!";
     item.category = @"Boots";
-    item.sizes = @[@"5", @"6", @"7", @"8"];
+    item.sizes = @[@"23", @"24", @"25", @"26"];
     item.img = @"BootsImages_11.png";
     item.price = @"$549.95";
     [self.productImages addObject:item];
@@ -51,7 +51,7 @@
     item.description = @"Kids' Ski Boots";
     item.inStock = @"Out of Stock!";
     item.category = @"Boots";
-    item.sizes = @[@"5", @"6", @"7", @"8"];
+    item.sizes = @[@"23", @"24", @"25", @"26"];
     item.img = @"BootsImages_06.png";
     item.price = @"$199.95";
     [self.productImages addObject:item];
@@ -61,7 +61,7 @@
     item.description = @"Dynamite Ski Boots";
     item.inStock = @"New Colors!";
     item.category = @"Boots";
-    item.sizes = @[@"5", @"6", @"7", @"8"];
+    item.sizes = @[@"23", @"24", @"25", @"26"];
     item.img = @"BootsImages_08.png";
     item.price = @"$499.99";
     [self.productImages addObject:item];
@@ -71,7 +71,7 @@
     item.description = @"Arctic Alltrack Ski Boots";
     item.inStock = @"Only 2 left!";
     item.category = @"Boots";
-    item.sizes = @[@"5", @"6", @"7", @"8"];
+    item.sizes = @[@"23", @"24", @"25", @"26"];
     item.img = @"BootsImages_14.png";
     item.price = @"$452.75";
     [self.productImages addObject:item];
@@ -81,7 +81,7 @@
     item.description = @"Cross-Country Ski Boots";
     item.inStock = @"In Stock";
     item.category = @"Boots";
-    item.sizes = @[@"5", @"6", @"7", @"8"];
+    item.sizes = @[@"23", @"24", @"25", @"26"];
     item.img = @"BootsImages_03.png";
     item.price = @"$649.95";
     [self.productImages addObject:item];
@@ -91,7 +91,7 @@
     item.description = @"Ski Boot Bindings";
     item.inStock = @"In Stock";
     item.category = @"Boots";
-    item.sizes = @[@"5", @"6", @"7", @"8"];
+    item.sizes = @[@"23", @"24", @"25", @"26"];
     item.img = @"BootsImages_24.png";
     item.price = @"$229.00";
     [self.productImages addObject:item];
@@ -111,7 +111,7 @@
     item.description = @"Hiker's Ski Boots";
     item.inStock = @"In Stock";
     item.category = @"Boots";
-    item.sizes = @[@"5", @"6", @"7", @"8"];
+    item.sizes = @[@"23", @"24", @"25", @"26"];
     item.img = @"BootsImages_23.png";
     item.price = @"$249.00";
     [self.productImages addObject:item];
@@ -121,7 +121,7 @@
     item.description = @"Captain Ski Boots";
     item.inStock = @"In Stock";
     item.category = @"Boots";
-    item.sizes = @[@"5", @"6", @"7", @"8"];
+    item.sizes = @[@"23", @"24", @"25", @"26"];
     item.img = @"BootsImages_26.png";
     item.price = @"$269.99";
     [self.productImages addObject:item];
@@ -131,7 +131,7 @@
     item.description = @"Boot Cut Ski Pants";
     item.inStock = @"In Stock";
     item.category = @"Boots";
-    item.sizes = @[@"5", @"6", @"7", @"8"];
+    item.sizes = @[@"23", @"24", @"25", @"26"];
     item.img = @"BootsImages_21.png";
     item.price = @"$34.99";
     [self.productImages addObject:item];
@@ -141,7 +141,7 @@
     item.description = @"Captain Ski Boots";
     item.inStock = @"In Stock";
     item.category = @"Boots";
-    item.sizes = @[@"5", @"6", @"7", @"8"];
+    item.sizes = @[@"23", @"24", @"25", @"26"];
     item.img = @"BootsImages_26.png";
     item.price = @"$269.99";
     [self.productImages addObject:item];
@@ -151,7 +151,7 @@
     item.description = @"Dynamite Ski Boots";
     item.inStock = @"New Colors!";
     item.category = @"Boots";
-    item.sizes = @[@"5", @"6", @"7", @"8"];
+    item.sizes = @[@"23", @"24", @"25", @"26"];
     item.img = @"BootsImages_29.png";
     item.price = @"$499.99";
     [self.productImages addObject:item];
@@ -161,7 +161,7 @@
     item.description = @"Kids' Ski Boots";
     item.inStock = @"Out of Stock!";
     item.category = @"Boots";
-    item.sizes = @[@"5", @"6", @"7", @"8"];
+    item.sizes = @[@"23", @"24", @"25", @"26"];
     item.img = @"BootsImages_06.png";
     item.price = @"$199.95";
     [self.productImages addObject:item];
@@ -171,7 +171,7 @@
     item.description = @"Arctic Alltrack Ski Boots";
     item.inStock = @"Only 2 left!";
     item.category = @"Boots";
-    item.sizes = @[@"5", @"6", @"7", @"8"];
+    item.sizes = @[@"23", @"24", @"25", @"26"];
     item.img = @"BootsImages_14.png";
     item.price = @"$452.75";
     [self.productImages addObject:item];
@@ -181,65 +181,10 @@
     item.description = @"Cross-Country Ski Boots";
     item.inStock = @"In Stock";
     item.category = @"Boots";
-    item.sizes = @[@"5", @"6", @"7", @"8"];
+    item.sizes = @[@"23", @"24", @"25", @"26"];
     item.img = @"BootsImages_03.png";
     item.price = @"$649.95";
     [self.productImages addObject:item];
-    
-    
-    /*item = [[InventoryItem alloc] init];
-    item.name = @"Shoe 11";
-    item.description = @"Shoe 11";
-    item.inStock = YES;
-    item.category = @"Shoes";
-    item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wcl004_0419.jpg";
-    [self.productImages addObject:item];
-    
-    item = [[InventoryItem alloc] init];
-    item.name = @"Shoe 12";
-    item.description = @"Shoe 12";
-    item.inStock = YES;
-    item.category = @"Shoes";
-    item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wcl004_0420.jpg";
-    [self.productImages addObject:item];
-    
-    item = [[InventoryItem alloc] init];
-    item.name = @"Shoe 13";
-    item.description = @"Shoe 13";
-    item.inStock = YES;
-    item.category = @"Shoes";
-    item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wcl004_0405.jpg";
-    [self.productImages addObject:item];
-    
-    item = [[InventoryItem alloc] init];
-    item.name = @"Shoe 14";
-    item.description = @"Shoe 14";
-    item.inStock = YES;
-    item.category = @"Shoes";
-    item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wcl004_0408.jpg";
-    [self.productImages addObject:item];
-    
-    item = [[InventoryItem alloc] init];
-    item.name = @"Shoe 15";
-    item.description = @"Shoe 15";
-    item.inStock = YES;
-    item.category = @"Shoes";
-    item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wcl004_0418.jpg";
-    [self.productImages addObject:item];
-    
-    item = [[InventoryItem alloc] init];
-    item.name = @"Shoe 16";
-    item.description = @"Shoe 16";
-    item.inStock = YES;
-    item.category = @"Shoes";
-    item.sizes = @[@"5", @"6", @"7", @"8"];
-    item.img = @"wcl004_0402.jpg";
-    [self.productImages addObject:item]; */
 }
 
 - (void)didReceiveMemoryWarning

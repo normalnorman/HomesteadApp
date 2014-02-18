@@ -89,7 +89,7 @@
 		7210D12018AE8DA0007F4B2B /* DetailViewNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewNavigationController.m; sourceTree = "<group>"; };
 		7232ED4C18AEC7D100CE2C6A /* MapPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPopoverController.h; sourceTree = "<group>"; };
 		7232ED4D18AEC7D100CE2C6A /* MapPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPopoverController.m; sourceTree = "<group>"; };
-		724AA7EE18A53D5800560649 /* Metropolitan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metropolitan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		724AA7EE18A53D5800560649 /* Homestead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homestead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		724AA7F118A53D5800560649 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		724AA7F318A53D5800560649 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		724AA7F518A53D5800560649 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -198,7 +198,7 @@
 		724AA7EF18A53D5800560649 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				724AA7EE18A53D5800560649 /* Metropolitan.app */,
+				724AA7EE18A53D5800560649 /* Homestead.app */,
 				724AA81218A53D5800560649 /* PulseDemoAppTests.xctest */,
 			);
 			name = Products;
@@ -366,7 +366,7 @@
 			);
 			name = PulseDemoApp;
 			productName = PulseDemoApp;
-			productReference = 724AA7EE18A53D5800560649 /* Metropolitan.app */;
+			productReference = 724AA7EE18A53D5800560649 /* Homestead.app */;
 			productType = "com.apple.product-type.application";
 		};
 		724AA81118A53D5800560649 /* PulseDemoAppTests */ = {
@@ -621,7 +621,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PulseDemoApp/PulseDemoApp-Prefix.pch";
 				INFOPLIST_FILE = "PulseDemoApp/PulseDemoApp-Info.plist";
-				PRODUCT_NAME = Metropolitan;
+				PRODUCT_NAME = Homestead;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -637,7 +637,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PulseDemoApp/PulseDemoApp-Prefix.pch";
 				INFOPLIST_FILE = "PulseDemoApp/PulseDemoApp-Info.plist";
-				PRODUCT_NAME = Metropolitan;
+				PRODUCT_NAME = Homestead;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};

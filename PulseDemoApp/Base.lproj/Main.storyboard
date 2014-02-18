@@ -229,7 +229,7 @@
                         </connections>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="METROPOLITAN" id="mOI-FS-AaM"/>
+                    <navigationItem key="navigationItem" title="HOMESTEAD, CO." id="mOI-FS-AaM"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
