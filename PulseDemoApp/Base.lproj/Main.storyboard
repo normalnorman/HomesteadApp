@@ -251,7 +251,7 @@
             </objects>
             <point key="canvasLocation" x="1655" y="-23"/>
         </scene>
-        <!--Department View Controller - SEARCH RESULTS: "JEANS"-->
+        <!--Department View Controller - SEARCH RESULTS: "SKI BOOTS"-->
         <scene sceneID="CbY-fZ-0OL">
             <objects>
                 <viewController storyboardIdentifier="Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="A2Y-uH-Z1y" customClass="DepartmentViewController" sceneMemberID="viewController">
@@ -299,22 +299,22 @@
                                                     <rect key="frame" x="9" y="0.0" width="152" height="214"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Udx-aX-KVF">
-                                                    <rect key="frame" x="10" y="219" width="301" height="21"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Udx-aX-KVF">
+                                                    <rect key="frame" x="0.0" y="219" width="170" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price -" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZf-PF-cYJ">
-                                                    <rect key="frame" x="9" y="232" width="53" height="33"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price -" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZf-PF-cYJ">
+                                                    <rect key="frame" x="9" y="232" width="59" height="33"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In Stock" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhc-7v-HlG">
-                                                    <rect key="frame" x="70" y="232" width="148" height="33"/>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In Stock" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhc-7v-HlG">
+                                                    <rect key="frame" x="70" y="232" width="100" height="33"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="15"/>
                                                     <color key="textColor" red="0.12549019607843137" green="0.81960784313725488" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -405,7 +405,7 @@
                             <constraint firstItem="lxt-QH-OIb" firstAttribute="top" secondItem="cAr-NM-BAy" secondAttribute="bottom" constant="74" id="snY-xC-qh8"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="SEARCH RESULTS: &quot;JEANS&quot;" id="rCz-YN-ua9"/>
+                    <navigationItem key="navigationItem" title="SEARCH RESULTS: &quot;SKI BOOTS&quot;" id="rCz-YN-ua9"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wcu-iD-aFR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1436,7 +1436,7 @@
         <image name="button" width="287" height="87"/>
         <image name="carrot.png" width="14" height="9"/>
         <image name="instock" width="40" height="40"/>
-        <image name="inventory_bg.png" width="2048" height="1479"/>
+        <image name="inventory_bg.png" width="2048" height="1536"/>
         <image name="jeans0" width="277" height="387"/>
         <image name="map" width="641" height="641"/>
         <image name="nav_item1" width="278" height="278"/>
