@@ -51,7 +51,9 @@
 		742A07EC18B3C6620055323B /* BootsImages_29.png in Resources */ = {isa = PBXBuildFile; fileRef = 742A07EB18B3C6620055323B /* BootsImages_29.png */; };
 		745428A418AAC59000E2398E /* MCRotatingCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 745428A318AAC59000E2398E /* MCRotatingCarousel.m */; };
 		745428A718AAC71900E2398E /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745428A618AAC71900E2398E /* ProductDetailViewController.m */; };
+<<<<<<< HEAD
 		747F97D618ABE09000554F55 /* inventory_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F97D518ABE09000554F55 /* inventory_bg.png */; };
+=======
 		747F97E218AC169E00554F55 /* jeans1.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F97D818AC169E00554F55 /* jeans1.png */; };
 		747F97E318AC169E00554F55 /* jeans10.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F97D918AC169E00554F55 /* jeans10.png */; };
 		747F97E418AC169E00554F55 /* jeans2.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F97DA18AC169E00554F55 /* jeans2.png */; };
@@ -62,6 +64,7 @@
 		747F97E918AC169E00554F55 /* jeans7.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F97DF18AC169E00554F55 /* jeans7.png */; };
 		747F97EA18AC169E00554F55 /* jeans8.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F97E018AC169E00554F55 /* jeans8.png */; };
 		747F97EB18AC169E00554F55 /* jeans9.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F97E118AC169E00554F55 /* jeans9.png */; };
+>>>>>>> 3846d0e684f8162e4ffd160c4e56c50200b5cb68
 		747F97EF18AC2DF700554F55 /* subnav.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F97EE18AC2DF700554F55 /* subnav.png */; };
 		747F97F118AC2F6300554F55 /* carrot.png in Resources */ = {isa = PBXBuildFile; fileRef = 747F97F018AC2F6300554F55 /* carrot.png */; };
 /* End PBXBuildFile section */
@@ -143,6 +146,9 @@
 		745428A318AAC59000E2398E /* MCRotatingCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCRotatingCarousel.m; sourceTree = "<group>"; };
 		745428A518AAC71900E2398E /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductDetailViewController.h; path = ../ProductDetailViewController.h; sourceTree = "<group>"; };
 		745428A618AAC71900E2398E /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductDetailViewController.m; path = ../ProductDetailViewController.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
+		747F97D518ABE09000554F55 /* inventory_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inventory_bg.png; sourceTree = "<group>"; };
+=======
 		747F97D818AC169E00554F55 /* jeans1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jeans1.png; sourceTree = "<group>"; };
 		747F97D918AC169E00554F55 /* jeans10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jeans10.png; sourceTree = "<group>"; };
 		747F97DA18AC169E00554F55 /* jeans2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jeans2.png; sourceTree = "<group>"; };
@@ -153,6 +159,7 @@
 		747F97DF18AC169E00554F55 /* jeans7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jeans7.png; sourceTree = "<group>"; };
 		747F97E018AC169E00554F55 /* jeans8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jeans8.png; sourceTree = "<group>"; };
 		747F97E118AC169E00554F55 /* jeans9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jeans9.png; sourceTree = "<group>"; };
+>>>>>>> 3846d0e684f8162e4ffd160c4e56c50200b5cb68
 		747F97EE18AC2DF700554F55 /* subnav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = subnav.png; sourceTree = "<group>"; };
 		747F97F018AC2F6300554F55 /* carrot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carrot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -325,6 +332,8 @@
 			name = Components;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+=======
 		742A07D618B3BE660055323B /* inventoryBoots */ = {
 			isa = PBXGroup;
 			children = (
@@ -361,6 +370,7 @@
 			path = inventoryJeans;
 			sourceTree = "<group>";
 		};
+>>>>>>> 3846d0e684f8162e4ffd160c4e56c50200b5cb68
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -440,6 +450,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
+				747F97D618ABE09000554F55 /* inventory_bg.png in Resources */,
+				724AA80D18A53D5800560649 /* Images.xcassets in Resources */,
+				747F97F118AC2F6300554F55 /* carrot.png in Resources */,
+				724AA7FC18A53D5800560649 /* InfoPlist.strings in Resources */,
+				724AA82C18A80E5500560649 /* hamburger_icon.png in Resources */,
+				724AA80518A53D5800560649 /* Main.storyboard in Resources */,
+				747F97EF18AC2DF700554F55 /* subnav.png in Resources */,
+=======
 				742A07EC18B3C6620055323B /* BootsImages_29.png in Resources */,
 				724AA88B18AABA6000560649 /* wcl004_0401.jpg in Resources */,
 				747F97E718AC169E00554F55 /* jeans5.png in Resources */,
@@ -500,6 +519,7 @@
 				724AA89A18AABA6000560649 /* wcl004_0420.jpg in Resources */,
 				724AA86518A97F3600560649 /* wsh005_0501.jpg in Resources */,
 				724AA89318AABA6000560649 /* wcl004_0413.jpg in Resources */,
+>>>>>>> 3846d0e684f8162e4ffd160c4e56c50200b5cb68
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
