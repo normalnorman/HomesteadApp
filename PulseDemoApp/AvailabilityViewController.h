@@ -10,7 +10,5 @@
 
 @interface AvailabilityViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-@property (strong) UIColor *customGreenColor;
-@property (strong) UIColor *customPurpleColor;
 @property (strong) NSString *availabilityLabel;
 @end

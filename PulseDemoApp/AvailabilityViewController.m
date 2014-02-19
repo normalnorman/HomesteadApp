@@ -10,6 +10,7 @@
 #import "LocationViewCell.h"
 #import "LocationItem.h"
 #import "DetailViewNavigationController.h"
+#import "AppDelegate.h"
 
 @interface AvailabilityViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *availability;
@@ -49,14 +50,12 @@
 
 - (void)setIsInStock:(NSString*)available
 {
-    self.customGreenColor = [UIColor colorWithRed:0 green:210/255 blue:146/255 alpha:1];
-    self.customPurpleColor = [UIColor colorWithRed:127/255 green:47/255 blue:249/255 alpha:1];
     self.locationData = [[NSMutableArray alloc] init];
     self.availability.text = available;
     
     if ([available isEqualToString:@"In Stock"])
     {
-        self.availability.textColor = self.customGreenColor;
+        self.availability.textColor = CUSTOM_GREEN_COLOR;
         LocationItem *location = [[LocationItem alloc] init];
         location.mapLabel = @"A.";
         location.name = @"N I-35, Austin";
@@ -97,7 +96,7 @@
         
         [self.locationData addObject:location];
     }else{
-        //self.availability.textColor = self.customPurpleColor;
+        self.availability.textColor = CUSTOM_PURPLE_COLOR;
         LocationItem *location = [[LocationItem alloc] init];
         location.mapLabel = @"A.";
         location.name = @"N I-35, Austin";
@@ -154,8 +153,6 @@
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    self.customGreenColor = [UIColor colorWithRed:0 green:210/255 blue:146/255 alpha:1];
-    self.customPurpleColor = [UIColor colorWithRed:127/255 green:47/255 blue:249/255 alpha:1];
     LocationViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"LocationListCell" forIndexPath:indexPath];
     LocationItem *item = [self.locationData objectAtIndex:indexPath.row];
     
@@ -165,7 +162,7 @@
     cell.availability.text = item.availability;
     if([item.availability isEqualToString:@"In Stock"])
     {
-        [cell.availability setTextColor:self.customGreenColor];
+        cell.availability.textColor = CUSTOM_GREEN_COLOR;
     }
     
     return cell;
