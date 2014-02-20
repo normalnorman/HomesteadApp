@@ -47,6 +47,7 @@
 		7280BCAC18AC75BB00648A1F /* CustomerInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280BCAB18AC75BB00648A1F /* CustomerInformationViewController.m */; };
 		7280BCB918AD2EC500648A1F /* CustomerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280BCB818AD2EC500648A1F /* CustomerObject.m */; };
 		72ACF4C718B54FB7007CDFB0 /* configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 72ACF4C618B54FB7007CDFB0 /* configuration.json */; };
+		72B2308718B6723500867FB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724AA80318A53D5800560649 /* Main.storyboard */; };
 		72E4152318B518D7002EDF70 /* IBMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E4152218B518D7002EDF70 /* IBMCore.framework */; };
 		72E4152818B518E7002EDF70 /* IBMData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E4152518B518E7002EDF70 /* IBMData.framework */; };
 		72E4152918B518E7002EDF70 /* IBMPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E4152618B518E7002EDF70 /* IBMPush.framework */; };
@@ -492,6 +493,7 @@
 				72095ED818B3CDA00034A5D9 /* product5.jpg in Resources */,
 				742A07E618B3BE660055323B /* BootsImages_21.png in Resources */,
 				72ACF4C718B54FB7007CDFB0 /* configuration.json in Resources */,
+				72B2308718B6723500867FB1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

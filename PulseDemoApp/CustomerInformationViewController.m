@@ -92,7 +92,6 @@
     [self saveInfo:sender];
     ProductDetailViewController *parent = (ProductDetailViewController*)self.parentViewController;
     parent.customerObj = self.customerObj;
-    [parent invokeAlert];
     
     //close popup and detail dialog
     [self dismissViewControllerAnimated:YES completion:nil];

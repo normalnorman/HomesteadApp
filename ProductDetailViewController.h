@@ -17,6 +17,5 @@
 @property (strong)LocationItem *locationObj;
 @property (strong)DetailViewNavigationController *viewNav;
 @property (strong)CustomerInformationViewController *customerForm;
--(void)invokeAlert;
 -(void)hideCustomerForm;
 @end
