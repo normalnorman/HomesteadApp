@@ -664,9 +664,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/crnorman/Documents/dev/iOS/Homestead\\ Sales\\ Associate\\ App/CloudOE/ibm-baas-sdk-ios",
-					"/Users/crnorman/Documents/dev/iOS/Homestead\\ Sales\\ Associate\\ App/PulseDemoApp",
-					/Users/blakeball/workspace/MetropolisApp/PulseDemoApp,
+					"$(SRCROOT)/PulseDemoApp",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PulseDemoApp/Homestead Sales Associate App-Prefix.pch";
@@ -688,9 +686,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/crnorman/Documents/dev/iOS/Homestead\\ Sales\\ Associate\\ App/CloudOE/ibm-baas-sdk-ios",
-					"/Users/crnorman/Documents/dev/iOS/Homestead\\ Sales\\ Associate\\ App/PulseDemoApp",
-					/Users/blakeball/workspace/MetropolisApp/PulseDemoApp,
+					"$(SRCROOT)/PulseDemoApp",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PulseDemoApp/Homestead Sales Associate App-Prefix.pch";
