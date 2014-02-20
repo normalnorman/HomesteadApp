@@ -93,7 +93,7 @@
 #pragma mark - MCRotatingCarouselDelegate
 -(void)rotatingCarousel:(MCRotatingCarousel *)carousel didSelectView:(UIView *)view atIndex:(NSUInteger)index
 {
-    NSLog(@"did select item at index: %i",index);
+    
 }
 
 - (void)didReceiveMemoryWarning

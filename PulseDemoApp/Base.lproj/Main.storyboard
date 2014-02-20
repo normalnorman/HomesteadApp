@@ -953,7 +953,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4WI-LB-3X5" firstAttribute="top" secondItem="PuG-91-D3w" secondAttribute="bottom" constant="-28" id="tYH-M3-BVX"/>
+                            <constraint firstItem="lRG-Ca-9EF" firstAttribute="centerY" secondItem="PuG-91-D3w" secondAttribute="centerY" id="qaf-qQ-vNJ"/>
                             <constraint firstItem="PuG-91-D3w" firstAttribute="leading" secondItem="lRG-Ca-9EF" secondAttribute="trailing" constant="8" id="ylw-XR-I9b"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -978,15 +978,15 @@
                         <viewControllerLayoutGuide type="bottom" id="QwB-rd-9xd"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9my-IZ-i6O">
-                        <rect key="frame" x="0.0" y="0.0" width="900" height="700"/>
+                        <rect key="frame" x="0.0" y="0.0" width="900" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wNx-nG-6LZ">
-                                <rect key="frame" x="0.0" y="254" width="760" height="1000"/>
+                                <rect key="frame" x="20" y="291" width="760" height="1000"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LHV-6Z-r7K">
-                                        <rect key="frame" x="0.0" y="-6" width="759" height="1228"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LHV-6Z-r7K">
+                                        <rect key="frame" x="0.0" y="50" width="759" height="1228"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artic Alltrack Ski Boots" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3z-yF-ISZ">
@@ -1291,10 +1291,11 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="UES-M7-8Rr" firstAttribute="leading" secondItem="3gW-tp-yvN" secondAttribute="trailing" constant="17" id="7bf-63-RET"/>
                                             <constraint firstItem="eWA-du-G9G" firstAttribute="leading" secondItem="LHV-6Z-r7K" secondAttribute="leading" constant="55" id="8PS-1V-Pfu"/>
-                                            <constraint firstItem="3gW-tp-yvN" firstAttribute="leading" secondItem="eWA-du-G9G" secondAttribute="trailing" constant="-202" id="9Az-In-fKh"/>
                                             <constraint firstAttribute="height" constant="1168" id="A96-Wb-Tr9"/>
                                             <constraint firstAttribute="width" constant="700" id="Ab4-Km-2Wt"/>
+                                            <constraint firstItem="3gW-tp-yvN" firstAttribute="leading" secondItem="eWA-du-G9G" secondAttribute="trailing" constant="17" id="Chk-l9-GGC"/>
                                             <constraint firstItem="eWA-du-G9G" firstAttribute="top" secondItem="R2r-0e-YAK" secondAttribute="bottom" constant="10" id="PTf-QJ-veI"/>
                                             <constraint firstItem="UES-M7-8Rr" firstAttribute="leading" secondItem="3gW-tp-yvN" secondAttribute="trailing" constant="17" id="Uba-cO-uaB"/>
                                             <constraint firstItem="3gW-tp-yvN" firstAttribute="top" secondItem="UES-M7-8Rr" secondAttribute="top" id="XZQ-15-h3Y"/>
@@ -1306,9 +1307,6 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="LHV-6Z-r7K" secondAttribute="bottom" id="Fi5-xK-DWZ"/>
-                                    <constraint firstItem="LHV-6Z-r7K" firstAttribute="top" secondItem="wNx-nG-6LZ" secondAttribute="top" constant="-6" id="nXU-WH-FgT"/>
-                                    <constraint firstAttribute="trailing" secondItem="LHV-6Z-r7K" secondAttribute="trailing" id="vDq-9D-9b8"/>
-                                    <constraint firstItem="LHV-6Z-r7K" firstAttribute="leading" secondItem="wNx-nG-6LZ" secondAttribute="leading" id="xm7-C0-lkn"/>
                                 </constraints>
                             </scrollView>
                             <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="obt-YA-eAu">
@@ -1336,6 +1334,9 @@
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wNx-nG-6LZ" firstAttribute="top" secondItem="GlI-2e-dx8" secondAttribute="bottom" constant="291" id="pMf-fn-xtN"/>
+                        </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <navigationItem key="navigationItem" title="Jeans" id="UAA-dZ-eoH"/>

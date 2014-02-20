@@ -48,10 +48,9 @@
 		7280BCB918AD2EC500648A1F /* CustomerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280BCB818AD2EC500648A1F /* CustomerObject.m */; };
 		72ACF4C718B54FB7007CDFB0 /* configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 72ACF4C618B54FB7007CDFB0 /* configuration.json */; };
 		72B2308718B6723500867FB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724AA80318A53D5800560649 /* Main.storyboard */; };
-		72B2308B18B6732700867FB1 /* IBMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B2308818B6732700867FB1 /* IBMCore.framework */; };
-		72B2308C18B6732700867FB1 /* IBMData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B2308918B6732700867FB1 /* IBMData.framework */; };
-		72B2308D18B6732700867FB1 /* IBMPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B2308A18B6732700867FB1 /* IBMPush.framework */; };
-		72E4152318B518D7002EDF70 /* IBMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E4152218B518D7002EDF70 /* IBMCore.framework */; };
+		72B2309118B68F2E00867FB1 /* IBMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B2308E18B68F2E00867FB1 /* IBMCore.framework */; };
+		72B2309218B68F2E00867FB1 /* IBMData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B2308F18B68F2E00867FB1 /* IBMData.framework */; };
+		72B2309318B68F2E00867FB1 /* IBMPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B2309018B68F2E00867FB1 /* IBMPush.framework */; };
 		742A07E118B3BE660055323B /* BootsImages_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 742A07D718B3BE660055323B /* BootsImages_03.png */; };
 		742A07E218B3BE660055323B /* BootsImages_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 742A07D818B3BE660055323B /* BootsImages_06.png */; };
 		742A07E318B3BE660055323B /* BootsImages_08.png in Resources */ = {isa = PBXBuildFile; fileRef = 742A07D918B3BE660055323B /* BootsImages_08.png */; };
@@ -140,10 +139,9 @@
 		7280BCB718AD2EC500648A1F /* CustomerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerObject.h; sourceTree = "<group>"; };
 		7280BCB818AD2EC500648A1F /* CustomerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerObject.m; sourceTree = "<group>"; };
 		72ACF4C618B54FB7007CDFB0 /* configuration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = configuration.json; sourceTree = "<group>"; };
-		72B2308818B6732700867FB1 /* IBMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMCore.framework; path = "CloudOE/ibm-baas-sdk-ios/IBMCore.framework"; sourceTree = "<group>"; };
-		72B2308918B6732700867FB1 /* IBMData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMData.framework; path = "CloudOE/ibm-baas-sdk-ios/IBMData.framework"; sourceTree = "<group>"; };
-		72B2308A18B6732700867FB1 /* IBMPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMPush.framework; path = "CloudOE/ibm-baas-sdk-ios/IBMPush.framework"; sourceTree = "<group>"; };
-		72E4152218B518D7002EDF70 /* IBMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMCore.framework; path = "CloudOE/ibm-baas-sdk-ios/IBMCore.framework"; sourceTree = "<group>"; };
+		72B2308E18B68F2E00867FB1 /* IBMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMCore.framework; path = PulseDemoApp/IBMCore.framework; sourceTree = "<group>"; };
+		72B2308F18B68F2E00867FB1 /* IBMData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMData.framework; path = PulseDemoApp/IBMData.framework; sourceTree = "<group>"; };
+		72B2309018B68F2E00867FB1 /* IBMPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMPush.framework; path = PulseDemoApp/IBMPush.framework; sourceTree = "<group>"; };
 		742A07D418B3BBF90055323B /* inventory_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inventory_bg.png; sourceTree = "<group>"; };
 		742A07D718B3BE660055323B /* BootsImages_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BootsImages_03.png; sourceTree = "<group>"; };
 		742A07D818B3BE660055323B /* BootsImages_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BootsImages_06.png; sourceTree = "<group>"; };
@@ -171,12 +169,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				724AA7F418A53D5800560649 /* CoreGraphics.framework in Frameworks */,
-				72B2308B18B6732700867FB1 /* IBMCore.framework in Frameworks */,
+				72B2309318B68F2E00867FB1 /* IBMPush.framework in Frameworks */,
 				724AA7F618A53D5800560649 /* UIKit.framework in Frameworks */,
-				72E4152318B518D7002EDF70 /* IBMCore.framework in Frameworks */,
-				72B2308D18B6732700867FB1 /* IBMPush.framework in Frameworks */,
+				72B2309118B68F2E00867FB1 /* IBMCore.framework in Frameworks */,
 				724AA7F218A53D5800560649 /* Foundation.framework in Frameworks */,
-				72B2308C18B6732700867FB1 /* IBMData.framework in Frameworks */,
+				72B2309218B68F2E00867FB1 /* IBMData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,10 +236,9 @@
 		724AA7F018A53D5800560649 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				72B2308818B6732700867FB1 /* IBMCore.framework */,
-				72B2308918B6732700867FB1 /* IBMData.framework */,
-				72B2308A18B6732700867FB1 /* IBMPush.framework */,
-				72E4152218B518D7002EDF70 /* IBMCore.framework */,
+				72B2308E18B68F2E00867FB1 /* IBMCore.framework */,
+				72B2308F18B68F2E00867FB1 /* IBMData.framework */,
+				72B2309018B68F2E00867FB1 /* IBMPush.framework */,
 				724AA7F118A53D5800560649 /* Foundation.framework */,
 				724AA7F318A53D5800560649 /* CoreGraphics.framework */,
 				724AA7F518A53D5800560649 /* UIKit.framework */,
@@ -669,6 +665,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/crnorman/Documents/dev/iOS/Homestead\\ Sales\\ Associate\\ App/CloudOE/ibm-baas-sdk-ios",
+					"/Users/crnorman/Documents/dev/iOS/Homestead\\ Sales\\ Associate\\ App/PulseDemoApp",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PulseDemoApp/Homestead Sales Associate App-Prefix.pch";
@@ -691,6 +688,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/crnorman/Documents/dev/iOS/Homestead\\ Sales\\ Associate\\ App/CloudOE/ibm-baas-sdk-ios",
+					"/Users/crnorman/Documents/dev/iOS/Homestead\\ Sales\\ Associate\\ App/PulseDemoApp",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PulseDemoApp/Homestead Sales Associate App-Prefix.pch";
