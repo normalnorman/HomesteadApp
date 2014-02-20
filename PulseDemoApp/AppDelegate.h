@@ -12,8 +12,9 @@
 #define CUSTOM_GREEN_COLOR [UIColor colorWithRed:0.0f green:210.0f/255.0f blue:146.0f/255.0f alpha:1];
 #define CUSTOM_PURPLE_COLOR [UIColor colorWithRed:127.0f/255.0f green:47.0f/255.0f blue:249.0f/255.0f alpha:1];
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UIAlertViewDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) UISplitViewController *splitViewController;
+@property (strong, nonatomic) UINavigationController *mainNavigationController;
 @end

@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "CustomerObject.h"
 
-@interface DetailViewNavigationController : UINavigationController <UIAlertViewDelegate>
+@interface DetailViewNavigationController : UINavigationController
 @property (retain)CustomerObject *customerObj;
-- (void)fakePush;
 - (void)setCustomerObject:(CustomerObject*)customerObj;
+- (void)showCustomerDetail:(CustomerObject*)customerObj;
 @end
 

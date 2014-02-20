@@ -35,25 +35,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-#pragma mark Alert View Delegate code
-- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
-{
-    NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
-    
-    if([title isEqualToString:@"OK"])
-    {
-        NSLog(@"%@", self.viewControllers);
-        if(self.viewControllers.count > 1)
-        {
-            DepartmentViewController *dvc = self.viewControllers[1];
-            [dvc showDetailViewForCustomer:self.customerObj];
-            
-        }
-            
-    }
-}
-
 -(void)setCustomerObject:(CustomerObject *)customerObj
 {
     self.customerObj = [[CustomerObject alloc]init];
@@ -63,35 +44,21 @@
     self.customerObj.address  = [NSString stringWithString:customerObj.address];
 }
 
-
-- (void)fakePush
+-(void)showCustomerDetail:(CustomerObject*)customerObj
 {
-    [NSTimer scheduledTimerWithTimeInterval:5 target:self selector:@selector(showAlert:) userInfo:nil repeats:NO];
-}
-
-- (void)showAlert:(id)sender {
-    IBMQuery *qry = [CustomerObject query];
-    [qry findObjectsInBackgroundWithBlock:^(NSError *error, NSArray *objects){
-        if (!error) {
-            int index = objects.count - 1;
-            [self setCustomerObject:[objects objectAtIndex:index]];
-            
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Artic Alltrack Ski Boots have shipped"
-                                                            message:[NSString stringWithFormat:@"%@ has received the Ski Boots ordered in store.  Do you want to follow up?", self.customerObj.fullName]
-                                                           delegate:self
-                                                  cancelButtonTitle:@"Cancel"
-                                                  otherButtonTitles:@"OK",
-                                  nil];
-            [alert show];
-            
-        }else{
-            // Error handing code here
-            NSLog(@"Get customer failed with error: %@", error);
-        }
-    }];
-
+    [self setCustomerObject:customerObj];
+    DepartmentViewController *dvc;
     
+    //if the search results view controller is shown, get a reference to that view controller
+    if(self.viewControllers.count > 1)
+    {
+        dvc = self.viewControllers[1];
+    }else{ //otherwise, instantiate a new version of the view controller
+        dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"Main"];
+        [self pushViewController:dvc animated:YES];
+    }
     
+    [dvc showDetailViewForCustomer:self.customerObj];
 }
 
 

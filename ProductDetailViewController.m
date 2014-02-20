@@ -146,15 +146,6 @@
     [self showCustomerForm];
 }
 
--(void)invokeAlert
-{
-    if(self.customerObj)
-    {
-        [self.viewNav setCustomerObject:self.customerObj];
-        [self.viewNav fakePush];
-    }
-}
-
 -(void)updateAvailability:(BOOL)available
 {
     UIImage *btnBackground;
