@@ -168,12 +168,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B2309118B68F2E00867FB1 /* IBMCore.framework in Frameworks */,
 				724AA7F418A53D5800560649 /* CoreGraphics.framework in Frameworks */,
+				72B2309218B68F2E00867FB1 /* IBMData.framework in Frameworks */,
 				72B2309318B68F2E00867FB1 /* IBMPush.framework in Frameworks */,
 				724AA7F618A53D5800560649 /* UIKit.framework in Frameworks */,
-				72B2309118B68F2E00867FB1 /* IBMCore.framework in Frameworks */,
 				724AA7F218A53D5800560649 /* Foundation.framework in Frameworks */,
-				72B2309218B68F2E00867FB1 /* IBMData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,6 +666,7 @@
 					"$(inherited)",
 					"/Users/crnorman/Documents/dev/iOS/Homestead\\ Sales\\ Associate\\ App/CloudOE/ibm-baas-sdk-ios",
 					"/Users/crnorman/Documents/dev/iOS/Homestead\\ Sales\\ Associate\\ App/PulseDemoApp",
+					/Users/blakeball/workspace/MetropolisApp/PulseDemoApp,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PulseDemoApp/Homestead Sales Associate App-Prefix.pch";
@@ -689,6 +690,7 @@
 					"$(inherited)",
 					"/Users/crnorman/Documents/dev/iOS/Homestead\\ Sales\\ Associate\\ App/CloudOE/ibm-baas-sdk-ios",
 					"/Users/crnorman/Documents/dev/iOS/Homestead\\ Sales\\ Associate\\ App/PulseDemoApp",
+					/Users/blakeball/workspace/MetropolisApp/PulseDemoApp,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PulseDemoApp/Homestead Sales Associate App-Prefix.pch";
