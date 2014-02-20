@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <IBMData/IBMData.h>
 
-@interface CustomerObject : NSObject
-@property (strong)NSString *name;
+@interface CustomerObject : IBMDataObject <IBMDataObjectSpecialization>
+@property (strong)NSString *fullName;
 @property (strong)NSString *email;
 @property (strong)NSString *phoneNumber;
 @property (strong)NSString *address;

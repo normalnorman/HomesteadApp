@@ -9,5 +9,18 @@
 #import "CustomerObject.h"
 
 @implementation CustomerObject
+@dynamic fullName;
+@dynamic email;
+@dynamic phoneNumber;
+@dynamic address;
 
++(void) initialize
+{
+    [self registerSpecialization];
+}
+
++(NSString*) dataClassName
+{
+    return @"Customer";
+}
 @end

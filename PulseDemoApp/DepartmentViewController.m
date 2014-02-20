@@ -252,7 +252,7 @@
     vc.modalTransitionStyle = UIModalPresentationCustom;
     vc.viewNav = (DetailViewNavigationController*)self.navigationController;
     
-    if(vc.viewNav.customerObj.name.length > 0)
+    if(vc.viewNav.customerObj.fullName.length > 0)
     {
         NSLog(@"Customer is set, do something here");
         vc.customerObj = vc.viewNav.customerObj;

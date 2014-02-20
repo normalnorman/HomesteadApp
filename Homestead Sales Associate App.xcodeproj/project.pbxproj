@@ -29,7 +29,6 @@
 		724AA7FC18A53D5800560649 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 724AA7FA18A53D5800560649 /* InfoPlist.strings */; };
 		724AA7FE18A53D5800560649 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AA7FD18A53D5800560649 /* main.m */; };
 		724AA80218A53D5800560649 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AA80118A53D5800560649 /* AppDelegate.m */; };
-		724AA80518A53D5800560649 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724AA80318A53D5800560649 /* Main.storyboard */; };
 		724AA80818A53D5800560649 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AA80718A53D5800560649 /* MasterViewController.m */; };
 		724AA80B18A53D5800560649 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AA80A18A53D5800560649 /* DetailViewController.m */; };
 		724AA80D18A53D5800560649 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724AA80C18A53D5800560649 /* Images.xcassets */; };
@@ -47,6 +46,10 @@
 		724AA87A18AA8ED900560649 /* MainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AA87918AA8ED900560649 /* MainSplitViewController.m */; };
 		7280BCAC18AC75BB00648A1F /* CustomerInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280BCAB18AC75BB00648A1F /* CustomerInformationViewController.m */; };
 		7280BCB918AD2EC500648A1F /* CustomerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280BCB818AD2EC500648A1F /* CustomerObject.m */; };
+		72ACF4C718B54FB7007CDFB0 /* configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 72ACF4C618B54FB7007CDFB0 /* configuration.json */; };
+		72E4152318B518D7002EDF70 /* IBMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E4152218B518D7002EDF70 /* IBMCore.framework */; };
+		72E4152818B518E7002EDF70 /* IBMData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E4152518B518E7002EDF70 /* IBMData.framework */; };
+		72E4152918B518E7002EDF70 /* IBMPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72E4152618B518E7002EDF70 /* IBMPush.framework */; };
 		742A07E118B3BE660055323B /* BootsImages_03.png in Resources */ = {isa = PBXBuildFile; fileRef = 742A07D718B3BE660055323B /* BootsImages_03.png */; };
 		742A07E218B3BE660055323B /* BootsImages_06.png in Resources */ = {isa = PBXBuildFile; fileRef = 742A07D818B3BE660055323B /* BootsImages_06.png */; };
 		742A07E318B3BE660055323B /* BootsImages_08.png in Resources */ = {isa = PBXBuildFile; fileRef = 742A07D918B3BE660055323B /* BootsImages_08.png */; };
@@ -134,6 +137,11 @@
 		7280BCAB18AC75BB00648A1F /* CustomerInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerInformationViewController.m; sourceTree = "<group>"; };
 		7280BCB718AD2EC500648A1F /* CustomerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerObject.h; sourceTree = "<group>"; };
 		7280BCB818AD2EC500648A1F /* CustomerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerObject.m; sourceTree = "<group>"; };
+		72ACF4C618B54FB7007CDFB0 /* configuration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = configuration.json; sourceTree = "<group>"; };
+		72E4152218B518D7002EDF70 /* IBMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMCore.framework; path = "CloudOE/ibm-baas-sdk-ios/IBMCore.framework"; sourceTree = "<group>"; };
+		72E4152418B518E7002EDF70 /* IBMCloudCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMCloudCode.framework; path = "CloudOE/ibm-baas-sdk-ios/IBMCloudCode.framework"; sourceTree = "<group>"; };
+		72E4152518B518E7002EDF70 /* IBMData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMData.framework; path = "CloudOE/ibm-baas-sdk-ios/IBMData.framework"; sourceTree = "<group>"; };
+		72E4152618B518E7002EDF70 /* IBMPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMPush.framework; path = "CloudOE/ibm-baas-sdk-ios/IBMPush.framework"; sourceTree = "<group>"; };
 		742A07D418B3BBF90055323B /* inventory_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inventory_bg.png; sourceTree = "<group>"; };
 		742A07D718B3BE660055323B /* BootsImages_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BootsImages_03.png; sourceTree = "<group>"; };
 		742A07D818B3BE660055323B /* BootsImages_06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BootsImages_06.png; sourceTree = "<group>"; };
@@ -162,7 +170,10 @@
 			files = (
 				724AA7F418A53D5800560649 /* CoreGraphics.framework in Frameworks */,
 				724AA7F618A53D5800560649 /* UIKit.framework in Frameworks */,
+				72E4152318B518D7002EDF70 /* IBMCore.framework in Frameworks */,
 				724AA7F218A53D5800560649 /* Foundation.framework in Frameworks */,
+				72E4152918B518E7002EDF70 /* IBMPush.framework in Frameworks */,
+				72E4152818B518E7002EDF70 /* IBMData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +236,10 @@
 		724AA7F018A53D5800560649 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				72E4152418B518E7002EDF70 /* IBMCloudCode.framework */,
+				72E4152518B518E7002EDF70 /* IBMData.framework */,
+				72E4152618B518E7002EDF70 /* IBMPush.framework */,
+				72E4152218B518D7002EDF70 /* IBMCore.framework */,
 				724AA7F118A53D5800560649 /* Foundation.framework */,
 				724AA7F318A53D5800560649 /* CoreGraphics.framework */,
 				724AA7F518A53D5800560649 /* UIKit.framework */,
@@ -236,6 +251,7 @@
 		724AA7F718A53D5800560649 /* Sales Associate App */ = {
 			isa = PBXGroup;
 			children = (
+				72ACF4C618B54FB7007CDFB0 /* configuration.json */,
 				72095EDB18B3D4370034A5D9 /* App Images */,
 				72095ECC18B3CDA00034A5D9 /* Product Images */,
 				742A07D618B3BE660055323B /* inventoryBoots */,
@@ -474,8 +490,8 @@
 				742A07EA18B3BE660055323B /* BootsImages_26.png in Resources */,
 				72095ED418B3CDA00034A5D9 /* product1.jpg in Resources */,
 				72095ED818B3CDA00034A5D9 /* product5.jpg in Resources */,
-				724AA80518A53D5800560649 /* Main.storyboard in Resources */,
 				742A07E618B3BE660055323B /* BootsImages_21.png in Resources */,
+				72ACF4C718B54FB7007CDFB0 /* configuration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,6 +614,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CODE_SIGN_FLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -631,6 +648,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CODE_SIGN_FLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -644,9 +662,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/crnorman/Documents/dev/iOS/Homestead\\ Sales\\ Associate\\ App/CloudOE/ibm-baas-sdk-ios",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PulseDemoApp/Homestead Sales Associate App-Prefix.pch";
 				INFOPLIST_FILE = "PulseDemoApp/Homestead Sales Associate App-Info.plist";
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Homestead;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -660,9 +684,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/crnorman/Documents/dev/iOS/Homestead\\ Sales\\ Associate\\ App/CloudOE/ibm-baas-sdk-ios",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PulseDemoApp/Homestead Sales Associate App-Prefix.pch";
 				INFOPLIST_FILE = "PulseDemoApp/Homestead Sales Associate App-Info.plist";
+				OTHER_CODE_SIGN_FLAGS = "";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Homestead;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

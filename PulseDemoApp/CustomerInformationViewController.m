@@ -58,6 +58,14 @@
     [self changedName:sender];
     [self changedEmail:sender];
     [self changedAddress:sender];
+    CustomerObject *obj = self.customerObj;
+    
+    [obj saveInBackgroundWithCallback:^(NSError *error, id obj) {
+        if(error){
+            // Error handing code here
+            NSLog(@"createItem failed with error: %@", error);
+        }
+    }];
     
     [self hideKeyboard];
 }
@@ -69,7 +77,7 @@
 }
 
 - (IBAction)changedName:(id)sender {
-    self.customerObj.name = self.nameField.text;
+    self.customerObj.fullName = self.nameField.text;
 }
 
 - (IBAction)changedEmail:(id)sender {
@@ -128,7 +136,7 @@
     if(customerObj)
     {
         self.customerObj = customerObj;
-        self.nameField.text = customerObj.name;
+        self.nameField.text = customerObj.fullName;
         self.emailField.text = customerObj.email;
         self.phoneField.text = customerObj.phoneNumber;
         self.addressField.text = customerObj.address;

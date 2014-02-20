@@ -6,16 +6,26 @@
 //  Copyright (c) 2014 IBM MIL. All rights reserved.
 //
 
+#import <IBMCore/IBMCore.h>
 #import "AppDelegate.h"
+#import "CustomerObject.h"
 
 @implementation AppDelegate
 
+-(BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    return YES;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [IBMBaaS initializeSDK];
     UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
     UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
     splitViewController.delegate = (id)navigationController.topViewController;
+    
+    // Register application for push notifications
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
     return YES;
 }
 							
@@ -44,6 +54,16 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    
+}
+
+-(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    
 }
 
 @end

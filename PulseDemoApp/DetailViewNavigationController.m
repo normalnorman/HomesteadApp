@@ -8,6 +8,7 @@
 
 #import "DetailViewNavigationController.h"
 #import "DepartmentViewController.h"
+#import <IBMCore/IBMCore.h>
 
 @interface DetailViewNavigationController ()
 @end
@@ -47,6 +48,7 @@
         {
             DepartmentViewController *dvc = self.viewControllers[1];
             [dvc showDetailViewForCustomer:self.customerObj];
+            
         }
             
     }
@@ -55,7 +57,7 @@
 -(void)setCustomerObject:(CustomerObject *)customerObj
 {
     self.customerObj = [[CustomerObject alloc]init];
-    self.customerObj.name = [NSString stringWithString:customerObj.name];
+    self.customerObj.fullName = [NSString stringWithString:customerObj.fullName];
     self.customerObj.email = [NSString stringWithString:customerObj.email];
     self.customerObj.phoneNumber  = [NSString stringWithString:customerObj.phoneNumber];
     self.customerObj.address  = [NSString stringWithString:customerObj.address];
@@ -68,13 +70,28 @@
 }
 
 - (void)showAlert:(id)sender {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Artic Alltrack Ski Boots have shipped"
-                                                    message:[NSString stringWithFormat:@"%@ has received the Ski Boots ordered in store.  Do you want to follow up?", self.customerObj.name]
-                                                   delegate:self
-                                          cancelButtonTitle:@"Cancel"
-                                          otherButtonTitles:@"OK",
-                          nil];
-    [alert show];
+    IBMQuery *qry = [CustomerObject query];
+    [qry findObjectsInBackgroundWithBlock:^(NSError *error, NSArray *objects){
+        if (!error) {
+            int index = objects.count - 1;
+            [self setCustomerObject:[objects objectAtIndex:index]];
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Artic Alltrack Ski Boots have shipped"
+                                                            message:[NSString stringWithFormat:@"%@ has received the Ski Boots ordered in store.  Do you want to follow up?", self.customerObj.fullName]
+                                                           delegate:self
+                                                  cancelButtonTitle:@"Cancel"
+                                                  otherButtonTitles:@"OK",
+                                  nil];
+            [alert show];
+            
+        }else{
+            // Error handing code here
+            NSLog(@"Get customer failed with error: %@", error);
+        }
+    }];
+
+    
+    
 }
 
 

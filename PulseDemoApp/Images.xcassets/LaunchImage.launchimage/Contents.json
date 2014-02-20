@@ -5,7 +5,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "homestead_splash-3.png",
+      "filename" : "homestead_splash_portrait768.png",
       "scale" : "1x"
     },
     {
@@ -13,7 +13,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "homestead_splash1024.png",
+      "filename" : "homestead_splash_landscape1024.png",
       "scale" : "1x"
     },
     {
@@ -21,7 +21,7 @@
       "idiom" : "ipad",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
-      "filename" : "homestead_splash-2.png",
+      "filename" : "homestead_splash_portrait.png",
       "scale" : "2x"
     },
     {
