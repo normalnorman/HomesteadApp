@@ -48,7 +48,7 @@
         self.detailDescriptionLabel.text = [self.detailItem description];
     }
     
-    UIImage *logoImage = [self imageWithImage:[UIImage imageNamed:@"METROPOLITAN"] scaledToSize:CGSizeMake(155, 17)];
+    UIImage *logoImage = [self imageWithImage:[UIImage imageNamed:@"METROPOLITAN"] scaledToSize:CGSizeMake(155, 15)];
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:logoImage];
 }
 

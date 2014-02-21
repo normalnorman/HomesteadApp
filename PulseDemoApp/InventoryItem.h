@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <IBMData/IBMData.h>
 
-@interface InventoryItem : NSObject
+@interface InventoryItem : IBMDataObject <IBMDataObjectSpecialization>
 @property (strong)NSString *name;
 @property (strong)NSString *description;
 @property (strong)NSString *inStock;
