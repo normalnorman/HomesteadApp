@@ -45,6 +45,8 @@
     
     // Register application for push notifications
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound | UIRemoteNotificationTypeAlert)];
+    
+    [APHLogger startNewSessionWithApplicationKey:@"a0e977ac8a9c0c8b8e2bd7e9bf86fdd2ca167ee7"];
     return YES;
 }
 							

@@ -28,9 +28,6 @@
     return self;
 }
 
-
-
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -41,29 +38,59 @@
     
     self.productImages = [[NSMutableArray alloc] init];
 	// Do any additional setup after loading the view.
-    /*self.productImages = @[@"store_photos/wsh005_0501.jpg", @"store_photos/wsh005_0502.jpg", @"store_photos/wsh005_0503.jpg", @"store_photos/wsh005_0509.jpg", @"store_photos/wsh005_0510.jpg", @"store_photos/wsh005_0512.jpg", @"store_photos/wsh005_0507.jpg", @"store_photos/wsh005_0508.jpg" ];*/
+    
+    //[self seedFakeData];
+    [self loadDataWithSync:NO];
+    
+}
+
+-(void)addInventoryItemWithName:(NSString*)name description:(NSString*)description availability:(NSString*)inStock category:(NSString*)category size:(NSArray*)sizes imageName:(NSString*)image price:(NSString*)price andSync:(BOOL)doSync
+{
+    InventoryItem *item = [[InventoryItem alloc] init];
+    item.name = name;
+    item.description = description;
+    item.category = category;
+    item.sizes = sizes;
+    item.inStock = inStock;
+    item.img = image;
+    item.price = price;
+    
+    [self.productImages addObject:item];
+
+    if(doSync)
+        [item sync];
+}
+
+-(void)loadDataWithSync:(BOOL)doSync
+{
+    IBMQuery *qry = [InventoryItem query];
+    [qry findObjectsInBackgroundWithBlock:^(NSError *error, NSArray *objects){
+        if (!error) {
+            for (int i=0; i < objects.count; i++) {
+                if(objects[i])
+                {
+                    InventoryItem *item = objects[i];
+                    [self addInventoryItemWithName:item.name description:item.description availability:item.inStock category:item.category size:item.sizes imageName:item.img price:item.price andSync:NO];
+                }
+            }
+            
+            //[self.collectionView insertItemsAtIndexPaths:self.productImages];
+            [self.collectionView reloadData];
+            
+        }else{
+            // Error handing code here
+            NSLog(@"Get customer failed with error: %@", error);
+        }
+    }];
+}
+
+-(void)seedFakeData
+{
+    [self addInventoryItemWithName:@"Arctic Alltrack Ski Boots" description:@"Arctic Alltrack Ski Boots" availability:@"Arctic Alltrack Ski Boots" category:@"Boots" size:@[@"23", @"24", @"25", @"26"] imageName:@"BootsImages_14.png" price:@"$452.75" andSync:NO];
+    
+    [self addInventoryItemWithName:@"Kids' Ski Boots" description:@"Kids' Ski Boots" availability:@"Out of Stock!" category:@"Boots" size:@[@"23", @"24", @"25", @"26"] imageName:@"BootsImages_06.png" price:@"$199.95" andSync:NO];
     
     InventoryItem *item = [[InventoryItem alloc] init];
-    
-    item.name = @"Arctic Alltrack Ski Boots";
-    item.description = @"Arctic Alltrack Ski Boots";
-    item.inStock = @"Only 2 left!";
-    item.category = @"Boots";
-    item.sizes = @[@"23", @"24", @"25", @"26"];
-    item.img = @"BootsImages_14.png";
-    item.price = @"$452.75";
-    [self.productImages addObject:item];
-    
-    item = [[InventoryItem alloc] init];
-    item.name = @"Kids' Ski Boots";
-    item.description = @"Kids' Ski Boots";
-    item.inStock = @"Out of Stock!";
-    item.category = @"Boots";
-    item.sizes = @[@"23", @"24", @"25", @"26"];
-    item.img = @"BootsImages_06.png";
-    item.price = @"$199.95";
-    [self.productImages addObject:item];
-    
     item = [[InventoryItem alloc] init];
     item.name = @"Dynamite Ski Boots";
     item.description = @"Dynamite Ski Boots";
@@ -208,6 +235,7 @@
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
+    self.collectionView = collectionView;
     return self.productImages.count;
 }
 

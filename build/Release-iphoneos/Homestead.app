@@ -1,0 +1,1 @@
+/tmp/Homestead Sales Associate App.dst/Applications/Homestead.app

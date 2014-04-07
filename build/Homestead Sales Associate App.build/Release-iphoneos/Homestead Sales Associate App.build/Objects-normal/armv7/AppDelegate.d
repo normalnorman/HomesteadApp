@@ -1,0 +1,35 @@
+dependencies: \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/AppDelegate.m \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMCore.framework/Headers/IBMCore.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMCore.framework/Headers/IBMBaaS.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMCore.framework/Headers/IBMBaaSConfig.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMCore.framework/Headers/IBMLogger.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMCore.framework/Headers/IBMPluginManager.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMCore.framework/Headers/IBMBaaSPlugin.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMCore.framework/Headers/IBMTransportFilter.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMCore.framework/Headers/IBMSecureHttpURLRequestInvocation.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMCore.framework/Headers/IBMSecurityProvider.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMCore.framework/Headers/IBMBaaSUtil.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMCore.framework/Headers/IBMSecureHttpURLRequestInvocationBuilder.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMCore.framework/Headers/IBMEvent.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMCore.framework/Headers/IBMEventHandler.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMCore.framework/Headers/IBMBaseEvent.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMCore.framework/Headers/IBMPluginRegistrationEvent.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMCore.framework/Headers/IBMInitializationCompleteEvent.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMCore.framework/Headers/IBMAnalyticsProcessor.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMCore.framework/Headers/IBMBaaSBasePlugin.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMCore.framework/Headers/IBMDefaultUrlConnectionDelegate.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/AppDelegate.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/CustomerObject.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMData.framework/Headers/IBMData.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMData.framework/Headers/IBMDataService.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMData.framework/Headers/IBMDataConstants.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMData.framework/Headers/IBMDataObject.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMData.framework/Headers/IBMDataObject+Specialize.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMData.framework/Headers/IBMQuery.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/DetailViewNavigationController.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/DepartmentViewController.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMPush.framework/Headers/IBMPush.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMPush.framework/Headers/IBMPushService.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMPush.framework/Headers/IBMDevice.h \
+  /Users/crnorman/Documents/dev/iOS/Homestead\ Sales\ Associate\ App/PulseDemoApp/IBMPush.framework/Headers/IBMResponseDelegate.h

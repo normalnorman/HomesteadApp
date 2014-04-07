@@ -17,4 +17,6 @@
 @property (strong)NSArray  *sizes;
 @property (strong)NSString *img;
 @property (strong)NSString *price;
+
+-(void)sync;
 @end

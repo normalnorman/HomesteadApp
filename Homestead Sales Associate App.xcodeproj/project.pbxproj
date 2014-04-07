@@ -46,6 +46,14 @@
 		724AA87A18AA8ED900560649 /* MainSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 724AA87918AA8ED900560649 /* MainSplitViewController.m */; };
 		7280BCAC18AC75BB00648A1F /* CustomerInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280BCAB18AC75BB00648A1F /* CustomerInformationViewController.m */; };
 		7280BCB918AD2EC500648A1F /* CustomerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7280BCB818AD2EC500648A1F /* CustomerObject.m */; };
+		7285465C18F304CF00CF5282 /* Apphance-Pre-Production.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7285465B18F304CF00CF5282 /* Apphance-Pre-Production.framework */; };
+		7285465E18F3051700CF5282 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7285465D18F3051600CF5282 /* QuartzCore.framework */; };
+		7285466018F3051D00CF5282 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7285465F18F3051D00CF5282 /* AudioToolbox.framework */; };
+		7285466218F3052300CF5282 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7285466118F3052300CF5282 /* CoreTelephony.framework */; };
+		7285466418F3052A00CF5282 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7285466318F3052A00CF5282 /* AssetsLibrary.framework */; };
+		7285466618F3053100CF5282 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7285466518F3053100CF5282 /* Security.framework */; };
+		7285466818F3053C00CF5282 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7285466718F3053C00CF5282 /* SystemConfiguration.framework */; };
+		7285466A18F3054300CF5282 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7285466918F3054300CF5282 /* CoreLocation.framework */; };
 		72ACF4C718B54FB7007CDFB0 /* configuration.json in Resources */ = {isa = PBXBuildFile; fileRef = 72ACF4C618B54FB7007CDFB0 /* configuration.json */; };
 		72B2308718B6723500867FB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 724AA80318A53D5800560649 /* Main.storyboard */; };
 		72B2309118B68F2E00867FB1 /* IBMCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72B2308E18B68F2E00867FB1 /* IBMCore.framework */; };
@@ -138,6 +146,14 @@
 		7280BCAB18AC75BB00648A1F /* CustomerInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerInformationViewController.m; sourceTree = "<group>"; };
 		7280BCB718AD2EC500648A1F /* CustomerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerObject.h; sourceTree = "<group>"; };
 		7280BCB818AD2EC500648A1F /* CustomerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerObject.m; sourceTree = "<group>"; };
+		7285465B18F304CF00CF5282 /* Apphance-Pre-Production.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "Apphance-Pre-Production.framework"; sourceTree = "<group>"; };
+		7285465D18F3051600CF5282 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7285465F18F3051D00CF5282 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7285466118F3052300CF5282 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		7285466318F3052A00CF5282 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		7285466518F3053100CF5282 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7285466718F3053C00CF5282 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7285466918F3054300CF5282 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		72ACF4C618B54FB7007CDFB0 /* configuration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = configuration.json; sourceTree = "<group>"; };
 		72B2308E18B68F2E00867FB1 /* IBMCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMCore.framework; path = PulseDemoApp/IBMCore.framework; sourceTree = "<group>"; };
 		72B2308F18B68F2E00867FB1 /* IBMData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMData.framework; path = PulseDemoApp/IBMData.framework; sourceTree = "<group>"; };
@@ -168,11 +184,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7285465E18F3051700CF5282 /* QuartzCore.framework in Frameworks */,
+				7285466018F3051D00CF5282 /* AudioToolbox.framework in Frameworks */,
+				7285466A18F3054300CF5282 /* CoreLocation.framework in Frameworks */,
+				7285466818F3053C00CF5282 /* SystemConfiguration.framework in Frameworks */,
+				7285466618F3053100CF5282 /* Security.framework in Frameworks */,
+				7285466418F3052A00CF5282 /* AssetsLibrary.framework in Frameworks */,
+				7285466218F3052300CF5282 /* CoreTelephony.framework in Frameworks */,
 				72B2309118B68F2E00867FB1 /* IBMCore.framework in Frameworks */,
 				724AA7F418A53D5800560649 /* CoreGraphics.framework in Frameworks */,
 				72B2309218B68F2E00867FB1 /* IBMData.framework in Frameworks */,
 				72B2309318B68F2E00867FB1 /* IBMPush.framework in Frameworks */,
 				724AA7F618A53D5800560649 /* UIKit.framework in Frameworks */,
+				7285465C18F304CF00CF5282 /* Apphance-Pre-Production.framework in Frameworks */,
 				724AA7F218A53D5800560649 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,6 +260,14 @@
 		724AA7F018A53D5800560649 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7285466918F3054300CF5282 /* CoreLocation.framework */,
+				7285466718F3053C00CF5282 /* SystemConfiguration.framework */,
+				7285466518F3053100CF5282 /* Security.framework */,
+				7285466318F3052A00CF5282 /* AssetsLibrary.framework */,
+				7285466118F3052300CF5282 /* CoreTelephony.framework */,
+				7285465F18F3051D00CF5282 /* AudioToolbox.framework */,
+				7285465D18F3051600CF5282 /* QuartzCore.framework */,
+				7285465B18F304CF00CF5282 /* Apphance-Pre-Production.framework */,
 				72B2308E18B68F2E00867FB1 /* IBMCore.framework */,
 				72B2308F18B68F2E00867FB1 /* IBMData.framework */,
 				72B2309018B68F2E00867FB1 /* IBMPush.framework */,
@@ -665,12 +697,16 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/PulseDemoApp",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PulseDemoApp/Homestead Sales Associate App-Prefix.pch";
 				INFOPLIST_FILE = "PulseDemoApp/Homestead Sales Associate App-Info.plist";
 				OTHER_CODE_SIGN_FLAGS = "";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = Homestead;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -687,12 +723,16 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/PulseDemoApp",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PulseDemoApp/Homestead Sales Associate App-Prefix.pch";
 				INFOPLIST_FILE = "PulseDemoApp/Homestead Sales Associate App-Info.plist";
 				OTHER_CODE_SIGN_FLAGS = "";
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = Homestead;
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
