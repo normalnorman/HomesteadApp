@@ -1,4 +1,4 @@
-MetropolisApp
+Homestead App
 =============
 
-Demo app for the fake Metropolis App
+Demo app for the Retail Associate Homestead App
